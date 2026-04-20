@@ -1,33 +1,59 @@
+lang: en
+timezone: Europe/London
+
 title: Jordan Lee
-subtitle: DevOps & Cloud Infrastructure Engineer
+tagline: DevOps & Cloud Infrastructure Engineer
 description: DevOps & Cloud Infrastructure Engineer — portfolio and blog
 url: "https://lee-it.co.uk"
 baseurl: ""
 
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: dark
+github:
+  username: jordan-lee-code
 
-locale: en-GB
-timezone: Europe/London
-
-author:
+social:
   name: Jordan Lee
-  bio: "DevOps & Cloud Infrastructure Engineer. Azure • Terraform • Bicep • CI/CD."
-  location: Leeds, UK
   email: jordan@lee-it.co.uk
   links:
-    - label: LinkedIn
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jordan-lee-devops"
+    - https://www.linkedin.com/in/jordan-lee-devops
 
-footer:
-  links:
-    - label: LinkedIn
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jordan-lee-devops"
+theme_mode: dark
 
-include:
-  - _pages
+avatar: ""
+
+remote_theme: cotes2020/jekyll-theme-chirpy
+
+toc: true
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    block:
+      line_numbers: true
+
+paginate: 10
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      pin: false
+  - scope:
+      path: _tabs
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: ""
+    values:
+      layout: page
 
 plugins:
   - jekyll-feed
@@ -35,19 +61,4 @@ plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-sitemap
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      show_date: true
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
+  - jekyll-paginate

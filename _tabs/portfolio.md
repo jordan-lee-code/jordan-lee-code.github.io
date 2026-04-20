@@ -1,10 +1,7 @@
 ---
-layout: single
 title: Experience
-permalink: /portfolio/
-toc: true
-toc_label: "Companies"
-toc_icon: "briefcase"
+icon: fas fa-briefcase
+order: 2
 ---
 
 ## The Access Group

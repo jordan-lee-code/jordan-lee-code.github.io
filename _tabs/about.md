@@ -1,9 +1,7 @@
 ---
-layout: single
 title: About
-permalink: /about/
-toc: true
-toc_label: "On this page"
+icon: fas fa-user-circle
+order: 1
 ---
 
 I'm a DevOps & Cloud Infrastructure Engineer based in Leeds, UK, specialising in Azure infrastructure for large-scale SaaS platforms. I build and maintain reusable Terraform, Bicep, and ARM-based infrastructure, shared CI/CD tooling, and an emerging AI platform layer — with a focus on automation, consistency, and enabling product teams to move at scale.
@@ -45,17 +43,17 @@ Currently at **The Access Group**, where I've owned the cloud infrastructure lay
 - Level 3 Diploma for ICT Systems and Principles for IT Professionals
 - Level 3 Diploma in ICT Professional Competence
 
-### In progress
+### In Progress
 
 - AZ-104: Microsoft Azure Administrator
 - AZ-305: Microsoft Azure Solutions Architect Expert
 
 ## Education
 
-**Zenos IT Academy** — Information Technology (2010–2011)  
+**Zenos IT Academy** — Information Technology (2010–2011)
 **Stanborough School** — General Studies (2005–2010)
 
 ## Contact
 
-[jordan@lee-it.co.uk](mailto:jordan@lee-it.co.uk)  
+[jordan@lee-it.co.uk](mailto:jordan@lee-it.co.uk)
 [linkedin.com/in/jordan-lee-devops](https://www.linkedin.com/in/jordan-lee-devops)

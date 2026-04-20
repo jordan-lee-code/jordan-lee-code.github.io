@@ -1,11 +1,7 @@
 ---
-layout: single
 title: Tech Stack
-permalink: /tech-stack/
-author_profile: true
-toc: true
-toc_label: "Stack"
-toc_icon: "layer-group"
+icon: fas fa-layer-group
+order: 3
 ---
 
 A breakdown of the tools and technologies I work with regularly.
