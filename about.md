@@ -14,6 +14,7 @@ Currently at **The Access Group**, where I've owned the cloud infrastructure lay
 - CI/CD Pipeline Design (Azure Pipelines)
 - Automation & DevOps tooling
 - Azure DevOps Services
+- AI-assisted engineering (Claude Code, Devin, GitHub Copilot)
 
 ## Certifications
 
