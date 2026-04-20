@@ -61,6 +61,15 @@ defaults:
     values:
       layout: page
 
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
 plugins:
   - jekyll-seo-tag
   - jekyll-include-cache
