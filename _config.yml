@@ -20,7 +20,7 @@ theme_mode: dark
 
 avatar: ""
 
-remote_theme: cotes2020/jekyll-theme-chirpy
+theme: jekyll-theme-chirpy
 
 toc: true
 
@@ -58,7 +58,6 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-paginate
