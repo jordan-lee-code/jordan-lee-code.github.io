@@ -8,17 +8,42 @@ I'm a Platform/Cloud Engineer based in Leeds, UK, specialising in Azure infrastr
 
 Currently at **The Access Group**, where I've owned the cloud infrastructure layer since May 2021.
 
-## Skills
+## Technical Skills
 
-- Azure Infrastructure & IaC (Terraform)
-- CI/CD Pipeline Design (Azure Pipelines)
-- Automation & DevOps tooling
-- Azure DevOps Services
-- AI-assisted engineering (Claude Code, Devin, GitHub Copilot)
+**Cloud & Infrastructure**
+- Microsoft Azure (Compute, Networking, Monitoring) & Amazon AWS
+- Terraform, Azure DevOps, GitLab CI/CD, Octopus Deploy
+- Platform virtualisation: VMware vSphere, Hyper-V, Citrix XenCenter
+- Workplace virtualisation: Citrix XenApp, Windows Virtual Desktop
+
+**Operating Systems & Server Technologies**
+- Windows Server 2000–2019; Windows Desktop XP–10
+- Windows Server roles: AD, GPO, DHCP, DNS, IIS, Intune, SCCM
+- Linux: Ubuntu, Debian, RHEL — build, configuration, and Puppet management
+
+**Scripting & Automation**
+- PowerShell, Terraform, Bash/CLI
+- CI/CD pipeline design and automation at scale
+
+**AI-Assisted Engineering**
+- Claude Code (subagent orchestration for multi-repo IaC changes)
+- Devin, GitHub Copilot
+
+**Messaging & Other**
+- Exchange 2003–2013, Office 365
+- Antivirus: Symantec EP, Microsoft SCEP
+- ITIL Service Operations (Incident, Request, Problem & Change Management)
 
 ## Certifications
 
-- Microsoft Certified: Azure Fundamentals
+- AZ-900: Microsoft Azure Fundamentals
+- MCTS: Windows 7 Configuring
+- MTA: Windows Server Administration Fundamentals
+- MTA: Security Fundamentals
+- MTA: Windows Operating System Fundamentals
+- MTA: Networking Fundamentals
+- Level 3 Diploma for ICT Systems and Principles for IT Professionals
+- Level 3 Diploma in ICT Professional Competence
 
 ## Education
 
