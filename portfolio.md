@@ -1,7 +1,40 @@
 ---
 layout: page
-title: Portfolio
+title: Experience
 permalink: /portfolio/
 ---
 
-Write your portfolio content here in Markdown.
+## The Access Group
+**Platform/Cloud Engineer** · May 2021 – Present · Pontefract, UK
+
+Owning the Azure cloud infrastructure layer for a multi-product SaaS platform. The work spans four main areas:
+
+**Terraform Modules** — Maintaining a large library of reusable Azure Terraform modules covering a wide range of services including API Management, App Service, Container Apps, CosmosDB, Key Vault, Redis, SQL, and virtual networking. These form a shared infrastructure foundation consumed by product teams across the business.
+
+**Product Infrastructure** — Building and maintaining dedicated IaC repos for individual products and services, ensuring each team has consistent, reproducible environments aligned to the shared module library.
+
+**Azure Platform & DevOps** — Running central platform tooling and CI/CD infrastructure for engineering teams across the business. This includes a shared library of Azure Pipelines YAML templates that standardise build, test, and deploy stages across all product repos; gated release workflows with environment promotion (dev → staging → production); pipeline-driven Terraform plan/apply with state management and PR-based approval gates; and subscription-level bootstrap tooling for onboarding new Azure environments consistently. Also responsible for API management configuration and backend-for-frontend infrastructure.
+
+**AI/ML Infrastructure** — Growing investment in AI platform infrastructure, including serverless GPU model hosting, LLM gateway configuration, and agentic platform services on Azure.
+
+---
+
+## Link Group (LNK)
+**Platform Engineer** · October 2020 – May 2021 · Leeds, UK
+
+---
+
+## Piksel
+**Microsoft Engineer** · February 2018 – June 2019 · York, UK
+
+---
+
+## Computacenter
+**2nd Line Wintel Analyst** · February 2013 – February 2018 · Hatfield, UK
+
+**1st Line Analyst** · June 2012 – January 2013 · Hatfield, UK
+
+---
+
+## Fujitsu UK
+**1st Line Analyst** · July 2011 – June 2012 · Stevenage, UK
