@@ -1,17 +1,56 @@
 title: Jordan Lee
+subtitle: DevOps & Cloud Infrastructure Engineer
 description: DevOps & Cloud Infrastructure Engineer — portfolio and blog
 url: "https://lee-it.co.uk"
 baseurl: ""
-theme: minima
-author: Jordan Lee
 
-minima:
-  skin: classic
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: dark
 
-header_pages:
-  - about.md
-  - portfolio.md
+locale: en-GB
+timezone: Europe/London
+
+author:
+  name: Jordan Lee
+  bio: "DevOps & Cloud Infrastructure Engineer. Azure • Terraform • Bicep • CI/CD."
+  location: Leeds, UK
+  email: jordan@lee-it.co.uk
+  links:
+    - label: LinkedIn
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jordan-lee-devops"
+    - label: Email
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:jordan@lee-it.co.uk"
+
+footer:
+  links:
+    - label: LinkedIn
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jordan-lee-devops"
+
+include:
+  - _pages
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true

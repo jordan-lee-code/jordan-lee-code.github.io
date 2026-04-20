@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: single
 title: About
 permalink: /about/
+toc: true
+toc_label: "On this page"
 ---
 
 I'm a DevOps & Cloud Infrastructure Engineer based in Leeds, UK, specialising in Azure infrastructure for large-scale SaaS platforms. I build and maintain reusable Terraform, Bicep, and ARM-based infrastructure, shared CI/CD tooling, and an emerging AI platform layer — with a focus on automation, consistency, and enabling product teams to move at scale.
@@ -10,21 +12,25 @@ Currently at **The Access Group**, where I've owned the cloud infrastructure lay
 
 ## Technical Skills
 
-**Cloud & IaC**
+### Cloud & IaC
+
 - Microsoft Azure
 - Terraform, Bicep, ARM Templates
 - Azure DevOps, GitLab CI/CD
 
-**CI/CD & Build Infrastructure**
+### CI/CD & Build Infrastructure
+
 - Azure Pipelines (YAML), shared pipeline template libraries
 - Hosted build agent management — VMSS-based auto-scaling pools and containerised agents
 - Pipeline-driven Terraform, Bicep, and ARM deployments with PR approval gates
 
-**Scripting & Automation**
+### Scripting & Automation
+
 - PowerShell, Bash, Azure CLI
 - Pipeline and infrastructure automation at scale
 
-**AI-Assisted Engineering**
+### AI-Assisted Engineering
+
 - Claude Code (subagent orchestration for multi-repo IaC changes)
 - Devin, GitHub Copilot
 
@@ -39,7 +45,8 @@ Currently at **The Access Group**, where I've owned the cloud infrastructure lay
 - Level 3 Diploma for ICT Systems and Principles for IT Professionals
 - Level 3 Diploma in ICT Professional Competence
 
-**In progress**
+### In progress
+
 - AZ-104: Microsoft Azure Administrator
 - AZ-305: Microsoft Azure Solutions Architect Expert
 
