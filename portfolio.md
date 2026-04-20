@@ -17,6 +17,16 @@ Owning the Azure cloud infrastructure layer for a multi-product SaaS platform. T
 
 **AI/ML Infrastructure** — Growing investment in AI platform infrastructure, including serverless GPU model hosting, LLM gateway configuration, and agentic platform services on Azure.
 
+A significant part of this work involves hands-on use of AI coding and agentic tools to accelerate infrastructure delivery at scale:
+
+- **Claude Code** — Used extensively for orchestrating large-scale infrastructure changes across multiple product repos simultaneously. Rather than working through repos sequentially, Claude Code's subagent model allows spawning parallel agents per product, each independently reading, planning, and applying Terraform changes to its own IaC repo. This has dramatically reduced the time needed to roll out module upgrades, naming convention changes, and policy enforcement across the full product estate.
+
+- **Devin** — Applied to longer-running, more autonomous infrastructure tasks: generating boilerplate IaC for new product onboarding, drafting pipeline templates, and exploring unfamiliar module configurations with minimal supervision.
+
+- **GitHub Copilot** — Integrated into day-to-day Terraform and YAML authoring, accelerating repetitive IaC patterns such as resource blocks, variable definitions, and pipeline stage scaffolding.
+
+Across all three tools, the core pattern is the same: treating AI agents as force multipliers for platform work that would otherwise require significant manual effort to coordinate — particularly when a single module change needs propagating across dozens of product infrastructure repos in parallel.
+
 ---
 
 ## Link Group (LNK)
