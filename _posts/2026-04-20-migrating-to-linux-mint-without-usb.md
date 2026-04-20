@@ -71,3 +71,7 @@ The performance story is genuinely better than I expected. For many titles, fram
 Absolutely. The system feels faster, boot times are shorter, and there's no background noise from an OS trying to upsell me on OneDrive or schedule a restart at the worst possible moment. The gaming experience for the titles I play most is equivalent to Windows, and in some cases better.
 
 The no-USB migration route added a few extra steps, but it was a useful exercise and meant I could do the whole thing without any downtime or dependency on spare hardware. If you're on the fence about Linux for gaming, Proton's current state makes it a much more realistic option than it was even two years ago.
+
+---
+
+*Postscript: I have since ordered a USB SD card reader. Just in case.*
