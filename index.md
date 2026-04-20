@@ -2,4 +2,4 @@
 layout: home
 ---
 
-DevOps Engineer based in Leeds, UK. I write about Azure, automation, CI/CD, and working in tech.
+DevOps & Cloud Infrastructure Engineer based in Leeds, UK. I write about Azure, infrastructure-as-code, CI/CD, and working in tech.
