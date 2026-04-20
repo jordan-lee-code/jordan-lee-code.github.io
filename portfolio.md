@@ -32,17 +32,25 @@ Across all three tools, the core pattern is the same: treating AI agents as forc
 ## Link Group (LNK)
 **Platform Engineer** · October 2020 – May 2021 · Leeds, UK
 
+Agile infrastructure role focused on Azure and version-controlled deployments via GitLab and Octopus Deploy. Wrote Terraform to build fault-tolerant, region-resilient solutions in Azure. Solely responsible for Windows Virtual Desktop — including image management and access control — which became critical during the shift to remote working. Supported migrations from on-premises to Azure across multiple internal EMEA domains, and regularly took ownership of IT projects end-to-end, proactively surfacing blockers to keep deliverables on track.
+
 ---
 
 ## Piksel
-**Microsoft Engineer** · February 2018 – June 2019 · York, UK
+**3rd Line Engineer** · February 2018 – June 2019 · York, UK
+
+Supported multi-customer Wintel environments spanning Azure, AWS, hybrid cloud, and on-premises infrastructure. Moved the team toward a DevOps workflow using Kanban and GitLab-based CI/CD pipelines. Key achievements included building customer monitoring in Azure Monitor and automating the monthly patching cycle via SCCM using PowerShell. Managed Linux servers (Ubuntu, Debian, RHEL) with Puppet, supported multiple IIS instances, and used Azure DevOps to validate server builds prior to deployment. Also handled SQL cluster migrations and Windows Server 2019 rollouts, including domain functional upgrades. Wrote detailed technical documentation to shift incident handling to the service desk and reduce on-call load.
 
 ---
 
 ## Computacenter
 **2nd Line Wintel Analyst** · February 2013 – February 2018 · Hatfield, UK
 
-**1st Line Analyst** · June 2012 – January 2013 · Hatfield, UK
+Supported a broad range of customers across a shared service model, covering everything from critical incident management to datacentre recovery and migration exercises. Managed customer expectations through complex, high-visibility incidents and delivered multiple projects within required timescales. Continuously expanded technical scope through shift-left activities, taking on additional responsibility for messaging technologies and broader infrastructure support.
+
+**Service Desk Analyst** · June 2012 – January 2013 · Hatfield, UK
+
+Improved first-time fix rates and reduced incorrect escalations by implementing automated ticket routing and call templates in the ITSM platform. Collaborated with 2nd and 3rd Line teams to raise the technical capability of the service desk, and produced support documentation that helped the team navigate the transition to Office 365.
 
 ---
 
