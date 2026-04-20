@@ -24,7 +24,7 @@ The built site outputs to `_site/` (gitignored).
 ## Structure
 
 - `_config.yml` — site title, tagline, author, theme, plugins, and collection config
-- `_tabs/` — nav pages (About, Experience, Tech Stack, Now); each file needs `icon`, `order`, and `title` front matter
+- `_tabs/` — nav pages (About, Experience, Tech Stack, Now, Tags, Categories, Archives); each file needs `icon`, `order`, and `title` front matter
 - `_posts/` — blog posts named `YYYY-MM-DD-slug.md` with `layout: post` front matter
 - `index.html` — home page using `layout: home` (must be `.html` for Chirpy's paginator)
 - `assets/img/` — images including `avatar.png`
@@ -51,6 +51,8 @@ icon: fas fa-icon-name
 order: N
 ---
 ```
+
+**Tags, Categories, Archives:** These are powered by `jekyll-archives` and use Chirpy-specific layouts (`layout: tags`, `layout: categories`, `layout: archives`). The config lives in `_config.yml` under `jekyll-archives`. Adding a new tag to a post is enough — `jekyll-archives` generates the tag page automatically. Do not set `layout: page` on `_tabs/tags.md`, `_tabs/categories.md`, or `_tabs/archives.md`; they must use their respective layout names or the pages will be blank.
 
 ## Blog post style guide
 
