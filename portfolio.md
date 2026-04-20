@@ -56,3 +56,5 @@ Improved first-time fix rates and reduced incorrect escalations by implementing 
 
 ## Fujitsu UK
 **1st Line Analyst** · July 2011 – June 2012 · Stevenage, UK
+
+First point of contact for technical support across a shared service model, handling incidents and service requests across a range of customer environments. Collaborated with 2nd and 3rd Line teams to resolve escalations and build personal technical knowledge, laying the foundation for progression into more complex infrastructure support roles.
