@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "Splitting Work and Personal Computing with Barrier KVM — and Scripting Around an Nvidia Display Bug"
 date: 2026-04-20
 author_profile: true

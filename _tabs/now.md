@@ -1,8 +1,7 @@
 ---
-layout: single
 title: Now
-permalink: /now/
-author_profile: true
+icon: fas fa-clock
+order: 4
 ---
 
 *A snapshot of what I'm focused on right now — updated periodically.*

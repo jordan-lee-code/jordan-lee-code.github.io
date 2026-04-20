@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "Managing Terraform Infrastructure Across 500+ Repos with a Shared Module Library"
 date: 2026-04-20
 author_profile: true
