@@ -1,7 +1,10 @@
 ---
-layout: page
+layout: single
 title: Experience
 permalink: /portfolio/
+toc: true
+toc_label: "Companies"
+toc_icon: "briefcase"
 ---
 
 ## The Access Group
