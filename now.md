@@ -17,10 +17,10 @@ Working toward **AZ-104** (Azure Administrator) and **AZ-305** (Azure Solutions 
 
 Exploring the practical limits of agentic AI tooling for infrastructure work — particularly how far Claude Code's subagent model can be pushed for parallel, multi-repo IaC changes.
 
+## Gaming
+
+Currently splitting time between **FINAL FANTASY XIV Online** (a long-term obsession at 5,600+ hours) and **Kerbal Space Program**. Recently picked up **Windrose**.
+
 ## Interests
 
 Writing about Azure, infrastructure-as-code, and working with AI tools in a DevOps context. Posts incoming.
-
----
-
-*Inspired by [nownownow.com](https://nownownow.com).*
