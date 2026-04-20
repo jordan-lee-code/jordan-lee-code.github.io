@@ -1,0 +1,19 @@
+title: Jordan Lee
+description: IT professional — portfolio and blog
+url: "https://lee-it.co.uk"
+baseurl: ""
+theme: minima
+author:
+  name: Jordan Lee
+  email: jordan@lee-it.co.uk
+
+minima:
+  skin: classic
+
+header_pages:
+  - about.md
+  - portfolio.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
