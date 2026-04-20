@@ -4,35 +4,29 @@ title: About
 permalink: /about/
 ---
 
-I'm a Platform/Cloud Engineer based in Leeds, UK, specialising in Azure infrastructure for large-scale SaaS platforms. I build and maintain reusable Terraform modules, per-product infrastructure-as-code, shared CI/CD tooling, and an emerging AI platform layer — all with a focus on automation, consistency, and enabling product teams to move quickly.
+I'm a DevOps & Cloud Infrastructure Engineer based in Leeds, UK, specialising in Azure infrastructure for large-scale SaaS platforms. I build and maintain reusable Terraform, Bicep, and ARM-based infrastructure, shared CI/CD tooling, and an emerging AI platform layer — with a focus on automation, consistency, and enabling product teams to move at scale.
 
 Currently at **The Access Group**, where I've owned the cloud infrastructure layer since May 2021.
 
 ## Technical Skills
 
-**Cloud & Infrastructure**
-- Microsoft Azure (Compute, Networking, Monitoring) & Amazon AWS
-- Terraform, Azure DevOps, GitLab CI/CD, Octopus Deploy
-- Platform virtualisation: VMware vSphere, Hyper-V, Citrix XenCenter
-- Workplace virtualisation: Citrix XenApp, Windows Virtual Desktop
+**Cloud & IaC**
+- Microsoft Azure
+- Terraform, Bicep, ARM Templates
+- Azure DevOps, GitLab CI/CD
 
-**Operating Systems & Server Technologies**
-- Windows Server 2000–2019; Windows Desktop XP–10
-- Windows Server roles: AD, GPO, DHCP, DNS, IIS, Intune, SCCM
-- Linux: Ubuntu, Debian, RHEL — build, configuration, and Puppet management
+**CI/CD & Build Infrastructure**
+- Azure Pipelines (YAML), shared pipeline template libraries
+- Hosted build agent management — VMSS-based auto-scaling pools and containerised agents
+- Pipeline-driven Terraform, Bicep, and ARM deployments with PR approval gates
 
 **Scripting & Automation**
-- PowerShell, Terraform, Bash/CLI
-- CI/CD pipeline design and automation at scale
+- PowerShell, Bash, Azure CLI
+- Pipeline and infrastructure automation at scale
 
 **AI-Assisted Engineering**
 - Claude Code (subagent orchestration for multi-repo IaC changes)
 - Devin, GitHub Copilot
-
-**Messaging & Other**
-- Exchange 2003–2013, Office 365
-- Antivirus: Symantec EP, Microsoft SCEP
-- ITIL Service Operations (Incident, Request, Problem & Change Management)
 
 ## Certifications
 
@@ -44,6 +38,10 @@ Currently at **The Access Group**, where I've owned the cloud infrastructure lay
 - MTA: Networking Fundamentals
 - Level 3 Diploma for ICT Systems and Principles for IT Professionals
 - Level 3 Diploma in ICT Professional Competence
+
+**In progress**
+- AZ-104: Microsoft Azure Administrator
+- AZ-305: Microsoft Azure Solutions Architect Expert
 
 ## Education
 

@@ -5,15 +5,15 @@ permalink: /portfolio/
 ---
 
 ## The Access Group
-**Platform/Cloud Engineer** · May 2021 – Present · Pontefract, UK
+**DevOps & Cloud Infrastructure Engineer** · May 2021 – Present · Pontefract, UK
 
-Owning the Azure cloud infrastructure layer for a multi-product SaaS platform. The work spans four main areas:
+Owning the Azure cloud infrastructure layer for a multi-product SaaS platform — managing infrastructure across 500+ repos and supporting 10–20 product teams. The work spans four main areas:
 
-**Terraform Modules** — Maintaining a large library of reusable Azure Terraform modules covering a wide range of services including API Management, App Service, Container Apps, CosmosDB, Key Vault, Redis, SQL, and virtual networking. These form a shared infrastructure foundation consumed by product teams across the business.
+**Terraform, Bicep & ARM Modules** — Maintaining a large library of reusable Azure IaC modules (Terraform and Bicep) covering API Management, App Service, Container Apps, CosmosDB, Key Vault, Redis, SQL, and virtual networking. These form a shared infrastructure foundation consumed by product teams across the business, with ARM templates used for specific bootstrapping and policy assignments.
 
 **Product Infrastructure** — Building and maintaining dedicated IaC repos for individual products and services, ensuring each team has consistent, reproducible environments aligned to the shared module library.
 
-**Azure Platform & DevOps** — Running central platform tooling and CI/CD infrastructure for engineering teams across the business. This includes a shared library of Azure Pipelines YAML templates that standardise build, test, and deploy stages across all product repos; gated release workflows with environment promotion (dev → staging → production); pipeline-driven Terraform plan/apply with state management and PR-based approval gates; and subscription-level bootstrap tooling for onboarding new Azure environments consistently. Also responsible for API management configuration and backend-for-frontend infrastructure.
+**Azure Platform & DevOps** — Running central platform tooling and CI/CD infrastructure for engineering teams across the business. This includes a shared library of Azure Pipelines YAML templates standardising build, test, and deploy stages across all product repos; gated release workflows with environment promotion (dev → staging → production); pipeline-driven Terraform and Bicep plan/apply with state management and PR-based approval gates; and subscription-level bootstrap tooling for onboarding new Azure environments consistently. Also responsible for hosted build agent infrastructure — managing both VMSS-based auto-scaling agent pools and containerised agents — as well as API management configuration and backend-for-frontend infrastructure.
 
 **AI/ML Infrastructure** — Growing investment in AI platform infrastructure, including serverless GPU model hosting, LLM gateway configuration, and agentic platform services on Azure.
 
@@ -23,16 +23,16 @@ A significant part of this work involves hands-on use of AI coding and agentic t
 
 - **Devin** — Applied to longer-running, more autonomous infrastructure tasks: generating boilerplate IaC for new product onboarding, drafting pipeline templates, and exploring unfamiliar module configurations with minimal supervision.
 
-- **GitHub Copilot** — Integrated into day-to-day Terraform and YAML authoring, accelerating repetitive IaC patterns such as resource blocks, variable definitions, and pipeline stage scaffolding.
+- **GitHub Copilot** — Integrated into day-to-day Terraform, Bicep, and YAML authoring, accelerating repetitive IaC patterns such as resource blocks, variable definitions, and pipeline stage scaffolding.
 
-Across all three tools, the core pattern is the same: treating AI agents as force multipliers for platform work that would otherwise require significant manual effort to coordinate — particularly when a single module change needs propagating across dozens of product infrastructure repos in parallel.
+Across all three tools, the core pattern is the same: treating AI agents as force multipliers for platform work that would otherwise require significant manual effort to coordinate — particularly when a single module change needs propagating across hundreds of product infrastructure repos in parallel.
 
 ---
 
 ## Link Group (LNK)
 **Platform Engineer** · October 2020 – May 2021 · Leeds, UK
 
-Agile infrastructure role focused on Azure and version-controlled deployments via GitLab and Octopus Deploy. Wrote Terraform to build fault-tolerant, region-resilient solutions in Azure. Solely responsible for Windows Virtual Desktop — including image management and access control — which became critical during the shift to remote working. Supported migrations from on-premises to Azure across multiple internal EMEA domains, and regularly took ownership of IT projects end-to-end, proactively surfacing blockers to keep deliverables on track.
+Agile infrastructure role focused on Azure and version-controlled deployments via GitLab. Wrote Terraform to build fault-tolerant, region-resilient solutions in Azure. Solely responsible for Windows Virtual Desktop — including image management and access control — which became critical during the shift to remote working. Supported migrations from on-premises to Azure across multiple internal EMEA domains, and regularly took ownership of IT projects end-to-end, proactively surfacing blockers to keep deliverables on track.
 
 ---
 
