@@ -22,4 +22,4 @@ Currently splitting time between **FINAL FANTASY XIV Online** (a long-term obses
 
 ## Interests
 
-Writing about Azure, infrastructure-as-code, and working with AI tools in a DevOps context. Posts incoming.
+Writing about Azure, infrastructure-as-code, and working with AI tools in a DevOps context.

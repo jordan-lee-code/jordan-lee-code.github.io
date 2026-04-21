@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Migrating to Linux Mint Without a USB Drive - And Why I'm Not Going Back"
-date: 2026-04-20
+date: 2026-04-19
 categories: [Linux]
-author_profile: true
 tags:
   - linux
   - gaming
