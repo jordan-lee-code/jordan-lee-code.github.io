@@ -46,9 +46,7 @@ display-profiles/
 │   ├── display-save-layout.sh # snapshot current DE panel config into a profile
 │   ├── display-apply-saved.sh # apply last saved profile (autostart)
 │   ├── display-shutdown.sh    # prompt for next profile, power off
-│   ├── display-restart.sh     # prompt for next profile, reboot
-│   ├── display-work.sh        # compatibility wrapper for display-switch.sh work
-│   └── display-personal.sh    # compatibility wrapper for display-switch.sh personal
+│   └── display-restart.sh     # prompt for next profile, reboot
 ├── hooks/
 │   └── cinnamon/
 │       ├── save-panels.sh
