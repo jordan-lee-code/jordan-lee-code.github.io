@@ -91,8 +91,7 @@ The generated `xrandr.sh` uses `--pos` for absolute placement and is plain bash,
 From that point, switching is one command:
 
 ```bash
-display-switch.sh work
-display-switch.sh gaming
+display-switch.sh <profile>
 ```
 
 Shutdown and restart pick up any profiles in `~/.config/display-profiles/` automatically, no config needed.
@@ -102,3 +101,5 @@ Shutdown and restart pick up any profiles in `~/.config/display-profiles/` autom
 Nvidia display bugs on Linux are a known long-running annoyance. The `xrandr` fix is well documented, but the autostart restore, dconf panel snapshots, and DE integration pieces are scattered. The profile wizard also addresses something that's genuinely fiddly to get right by hand: building a correct multi-monitor `xrandr` invocation with positions and refresh rates across multiple outputs.
 
 My setup is Linux Mint with Cinnamon and two 1440p DisplayPort monitors, but the core works on any DE. If you're on GNOME or XFCE and want panel layout support, adding a hook directory is all it takes.
+
+This is also the first thing I've published as open source. It started as a personal workaround for an annoying driver bug and turned into something I'd actually want to hand to someone else. Feels like a reasonable first release.
