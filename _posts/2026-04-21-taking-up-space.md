@@ -39,6 +39,14 @@ It isn't. It's just the version that learned to make itself smaller.
 
 The monitoring itself carries a weight that never surfaces in any productivity metric. Every thread of attention spent tracking how something is landing, whether an adjustment is needed, whether the tone is reading as intended, is attention drawn away from the actual work. It's invisible overhead that accumulates across every meeting, every review, every message you softened before sending. Your colleagues aren't running that process. You are, constantly, and the toll is real even when nobody's measuring it.
 
+## The cost of being overridden
+
+There's a more concrete form of damage than invisible overhead, and it's the kind that ends up in your performance record. When your input gets talked over or dismissed, the work continues without it. Decisions get made on the basis of what was heard, not what was said. And then, somewhere down the line, the problem you flagged materialises, or the direction that was chosen turns out to be wrong, and everything has to be unpicked and done again.
+
+The rework is real. The wasted time is real. What's particularly unpleasant about this is that the rework then reads as failure. You were in the room. You were involved. The project ran into trouble and had to double back, and from above that looks like the team didn't know what it was doing. The person who had the least authority to redirect things, whose concern was talked over before it could land, absorbs a disproportionate share of that impression.
+
+You end up carrying the cost of being dismissed twice: once in the moment when it happens, and again in the aftermath when the consequences get attributed to your competence rather than to the decision that ignored you.
+
 ## Confidence as a gendered currency
 
 Men in tech are rewarded for arrogance in ways that women aren't, and the distinction worth drawing isn't between arrogance and genuine expertise. It's between genuine expertise and the performative confidence that gets mistaken for it: the bold claim, the unqualified recommendation, the "here's exactly what we should do" delivered without caveats or supporting detail.
