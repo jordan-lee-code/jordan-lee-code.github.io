@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Per-Mode Panel Layouts in Cinnamon Using dconf Snapshots"
-date: 2026-04-21
+date: 2026-04-19
 categories: [Linux]
 tags:
   - linux
@@ -12,7 +12,7 @@ tags:
   - productivity
 ---
 
-Following on from [the previous post](/2026/04/20/barrier-kvm-nvidia-display-workaround/) about scripting display mode switching, the next logical step was making the Cinnamon panel layout switch alongside the monitors. Running one screen for work and two for personal means the panel arrangement should change too. A single centred panel on one monitor versus panels spread across two.
+Following on from [the previous post](/2026/04/18/barrier-kvm-nvidia-display-workaround/) about scripting display mode switching, the next logical step was making the Cinnamon panel layout switch alongside the monitors. Running one screen for work and two for personal means the panel arrangement should change too. A single centred panel on one monitor versus panels spread across two.
 
 Cinnamon stores all panel configuration in dconf, which makes this straightforward: snapshot each layout, restore the right one when switching modes.
 

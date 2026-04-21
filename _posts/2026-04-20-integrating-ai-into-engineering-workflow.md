@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "AI in the Engineering Workflow: Augmentation vs Replacement"
-date: 2026-04-21
-categories: [DevOps]
+date: 2026-04-20
+categories: [DevOps, AI]
 tags:
   - ai
   - devops
   - claude-code
+  - claude
   - devin
   - tooling
   - productivity
