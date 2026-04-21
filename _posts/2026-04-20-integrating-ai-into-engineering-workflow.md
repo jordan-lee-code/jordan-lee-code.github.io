@@ -65,7 +65,7 @@ Everything I've said above is about code generation, and the enthusiasm is genui
 
 The reason is specific: generated imagery is consumed passively. Someone sees a realistic photo or video and has no signal that it isn't real. The asymmetry between production cost (near zero) and believability (high) makes it a misinformation accelerant in a way code gen isn't. A hallucinated code snippet fails visibly when you run it. A generated image of something that never happened just looks like a photograph.
 
-The communities most harmed aren't random. They're the ones already targeted by misinformation and harassment: minorities, women in public life, marginalised groups, political dissidents. Deepfakes disproportionately target these groups. The technology doesn't create a new category of harm — it lowers the barrier to existing harms that were already causing serious damage.
+The communities most harmed aren't random. They're the ones already targeted by misinformation and harassment: minorities, women in public life, trans people, people of colour, marginalised groups, political dissidents. Deepfakes disproportionately target these groups. The technology doesn't create a new category of harm — it lowers the barrier to existing harms that were already causing serious damage.
 
 There's also a consent problem that doesn't have a clean answer. These models were trained on work scraped from illustrators, photographers, and designers — many of them freelancers — without meaningful agreement. The output competes with those people directly. That's not democratising creativity; it's displacing the people whose work built the training corpus.
 
