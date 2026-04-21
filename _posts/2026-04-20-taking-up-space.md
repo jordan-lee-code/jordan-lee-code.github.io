@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Taking Up Space"
-date: 2026-04-21
+date: 2026-04-20
 categories: [Career]
 tags:
   - career

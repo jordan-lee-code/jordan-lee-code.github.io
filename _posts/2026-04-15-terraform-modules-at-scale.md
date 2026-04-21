@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Managing Terraform Infrastructure Across 500+ Repos with a Shared Module Library"
-date: 2026-04-16
+date: 2026-04-15
 categories: [DevOps]
 tags:
   - terraform

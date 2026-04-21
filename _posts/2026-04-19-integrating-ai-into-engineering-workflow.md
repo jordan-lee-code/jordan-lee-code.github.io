@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI in the Engineering Workflow: Augmentation vs Replacement"
-date: 2026-04-20
+date: 2026-04-19
 categories: [DevOps, AI]
 tags:
   - ai
