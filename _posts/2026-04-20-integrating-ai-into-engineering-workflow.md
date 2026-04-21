@@ -13,7 +13,7 @@ tags:
   - productivity
 ---
 
-There's been a lot of noise about AI in software engineering over the last couple of years, and most of it sits at one of two extremes. Either AI is a glorified autocomplete that occasionally saves you a Google search, or it's about to replace your entire engineering team. Neither is accurate, and the reality of trying to actually integrate these tools into a real workflow is more interesting and more frustrating than either camp tends to admit.
+There's been a lot of noise about AI in software engineering over the last couple of years, and most of it sits at one of two extremes. Either AI is a glorified autocomplete that occasionally saves you a Google search, or it's about to replace your entire engineering team. Neither is accurate, and the reality of integrating these tools into a real workflow is more interesting and more frustrating than either camp tends to admit.
 
 I've been using AI tooling seriously for a while now: Claude Code daily, Devin for specific experiments, GitHub Copilot in the background. Here's what I've actually found.
 
@@ -23,7 +23,9 @@ Tools like Devin are marketed, more or less explicitly, as autonomous engineerin
 
 I understand why that framing exists. It's a compelling sales narrative. But it fundamentally misunderstands what junior engineers actually do on a team, and it underestimates how much invisible context is required to make good engineering decisions.
 
-A junior engineer isn't just someone who writes code. They ask questions when something feels off. They push back when a task doesn't make sense. They learn the codebase and accumulate institutional knowledge. An autonomous agent handed a ticket doesn't know that the naming convention in that repo is intentionally inconsistent for a historical reason, or that the team is mid-migration and the "right" approach today would break everything in two weeks. It just does what it's told, with confidence.
+A junior engineer isn't just someone who writes code. They ask questions when something feels off. They push back when a task doesn't make sense. They learn the codebase and accumulate institutional knowledge.
+
+An autonomous agent handed a ticket doesn't know that the naming convention in that repo is intentionally inconsistent for a historical reason, or that the team is mid-migration and the "right" approach today would break everything in two weeks. It just does what it's told, with confidence.
 
 I've watched Devin produce technically correct work that was completely wrong for the context. And it turns out I'm not alone in that assessment. The video below covers developer sentiment around Claude Code in some depth, and it's worth noting that the presenter calls Devin out directly: it "never quite took off in part because they kind of lied about a lot of the things it could do." That matches what I found in practice. It's impressive and genuinely useful for isolated, well-defined tasks. For anything that requires judgment, it struggles.
 
@@ -65,9 +67,9 @@ Everything I've said above is about code generation, and the enthusiasm is genui
 
 The reason is specific: generated imagery is consumed passively. Someone sees a realistic photo or video and has no signal that it isn't real. The asymmetry between production cost (near zero) and believability (high) makes it a misinformation accelerant in a way code gen isn't. A hallucinated code snippet fails visibly when you run it. A generated image of something that never happened just looks like a photograph.
 
-The communities most harmed aren't random. They're the ones already targeted by misinformation and harassment: minorities, women in public life, trans people, people of colour, marginalised groups, political dissidents. Deepfakes disproportionately target these groups. The technology doesn't create a new category of harm — it lowers the barrier to existing harms that were already causing serious damage.
+The communities most harmed aren't random. They're the ones already targeted by misinformation and harassment: minorities, women in public life, trans people, people of colour, marginalised groups, political dissidents. Deepfakes disproportionately target these groups. The technology doesn't create a new category of harm. It lowers the barrier to existing harms that were already causing serious damage.
 
-There's also a consent problem that doesn't have a clean answer. These models were trained on work scraped from illustrators, photographers, and designers — many of them freelancers — without meaningful agreement. The output competes with those people directly. That's not democratising creativity; it's displacing the people whose work built the training corpus.
+There's also a consent problem that doesn't have a clean answer. These models were trained on work scraped from illustrators, photographers, and designers, many of them freelancers, without meaningful agreement. The output competes with those people directly. That's not democratising creativity; it's displacing the people whose work built the training corpus.
 
 Code gen lands differently for a structural reason: code isn't passively consumed. It has to be read, reviewed, tested, and deployed by someone who takes responsibility for it. The human stays in the loop in a way that doesn't apply to a generated image dropped into a news article. And the most compelling use case for code gen — building tools you'd otherwise pay subscriptions for, reducing dependency on commercial SaaS, making self-hosting accessible — is actually about increasing individual ownership rather than replacing skilled work.
 
