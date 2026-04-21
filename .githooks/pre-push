@@ -10,6 +10,7 @@ if [[ ! -f "$SCRIPT" ]]; then
 fi
 
 # Read the range being pushed from stdin
+NEEDS_REGEN=0
 while read local_ref local_sha remote_ref remote_sha; do
   if [[ "$remote_sha" == "0000000000000000000000000000000000000000" ]]; then
     RANGE="$local_sha"
@@ -18,10 +19,14 @@ while read local_ref local_sha remote_ref remote_sha; do
   fi
 
   CHANGED=$(git diff --name-only "$RANGE" 2>/dev/null)
-  if ! echo "$CHANGED" | grep -qE "^(_data/cv\.yml|assets/cv\.html|_layouts/cv\.html)$"; then
-    exit 0
+  if echo "$CHANGED" | grep -qE "^(_data/cv\.yml|assets/cv\.html|_layouts/cv\.html)$"; then
+    NEEDS_REGEN=1
   fi
 done
+
+if [[ "$NEEDS_REGEN" -eq 0 ]]; then
+  exit 0
+fi
 
 echo "Regenerating CV..."
 "$SCRIPT"
