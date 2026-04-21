@@ -5,3 +5,6 @@ _site/
 vendor/
 Gemfile.lock
 .claude/personal.md
+.claude/settings.local.json
+.claude/style-check.py
+.githooks/
