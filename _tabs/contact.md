@@ -6,7 +6,7 @@ order: 8
 
 ## Get in touch
 
-[jordan@lee-it.co.uk](mailto:jordan@lee-it.co.uk)
+[contact@lee-it.co.uk](mailto:contact@lee-it.co.uk)
 
 ## LinkedIn
 
