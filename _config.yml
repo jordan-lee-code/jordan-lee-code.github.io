@@ -19,6 +19,9 @@ social:
 theme_mode: dark
 
 avatar: "/assets/img/avatar.png"
+image: "/assets/img/avatar.png"
+
+search: true
 
 theme: jekyll-theme-chirpy
 
@@ -56,6 +59,7 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+      read_time: true
   - scope:
       path: ""
     values:
