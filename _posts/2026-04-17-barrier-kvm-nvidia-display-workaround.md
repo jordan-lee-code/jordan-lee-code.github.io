@@ -33,11 +33,9 @@ The issue is that Nvidia's Linux driver intermittently drops the configured refr
 
 This isn't a new problem. It's been reported against various driver versions and generally comes down to the driver not reliably persisting `xrandr` state through mode changes. Cinnamon compounds it slightly because when it restarts its compositor, it reads back its saved `monitors.xml`, which may itself be stale.
 
-## The scripting solution
+## The fix
 
-Since this is a repeatable problem with a known fix (`xrandr`), the answer was to script it. I ended up with four scripts in `~/bin/`:
-
-**`display-work.sh`** turns DP-0 off and sets DP-2 as the sole display at 165Hz:
+Since this is a repeatable problem with a known fix (`xrandr`), the answer was to script it. The core of each profile is a short xrandr invocation. Work mode turns DP-0 off and puts everything on DP-2:
 
 ```bash
 xrandr \
@@ -45,7 +43,7 @@ xrandr \
     --output DP-2 --mode 2560x1440 --rate 165.08 --primary
 ```
 
-**`display-personal.sh`** brings both screens up with DP-0 primary on the left:
+Personal mode brings both screens up with DP-0 primary:
 
 ```bash
 xrandr \
@@ -53,34 +51,4 @@ xrandr \
     --output DP-2 --mode 2560x1440 --rate 165.08 --right-of DP-0
 ```
 
-**`display-shutdown.sh`** and **`display-restart.sh`** show a Zenity dialog asking which mode to use next time, save the answer to `~/.config/display-mode`, then call `systemctl poweroff` or `systemctl reboot`.
-
-**`display-apply-saved.sh`** reads `~/.config/display-mode` and calls the appropriate script. This runs on every login via an autostart entry, so the right layout is applied automatically regardless of whether the previous session ended with a shutdown or restart.
-
-## Hooking into Cinnamenu
-
-The shutdown and restart buttons in Cinnamenu's sidebar are defined in `sidebar.js` inside the applet directory. Replacing their callbacks with `Util.spawnCommandLine()` calls pointing at the custom scripts was straightforward, and it also gave me the chance to add a Restart button, which Cinnamenu doesn't include by default:
-
-```javascript
-// Shutdown
-() => {
-    this.appThis.menu.close();
-    Util.spawnCommandLine('/home/YOUR_USER/bin/display-shutdown.sh');
-}
-
-// Restart (added)
-() => {
-    this.appThis.menu.close();
-    Util.spawnCommandLine('/home/YOUR_USER/bin/display-restart.sh');
-}
-```
-
-Now every shutdown and restart prompts for the next display mode before acting. The start menu also has standalone "Work Displays" and "Personal Displays" entries for switching on the fly without rebooting.
-
-## The result
-
-Switching between work and personal is now two clicks: open the menu, pick the display mode. The 165Hz refresh rate and correct screen layout are applied consistently on every login, and the Nvidia driver's forgetfulness is no longer something I have to think about. The script just reapplies what should have been there anyway.
-
-It's more involved than anything this mundane ought to require, and I won't pretend there isn't a quiet indignation in having to script around a display driver that should simply work. But once it's scripted it stays solved, and the frustration collapses into something you stop thinking about entirely.
-
-The scripts grew from here into something more general: named profiles, a setup wizard, and DE-agnostic hooks. The full thing is on GitHub as [display-profiles](https://github.com/jordan-lee-code/display-profiles).
+From there the solution grew to cover panel layouts, shutdown and restart prompts, autostart on login, and an interactive profile wizard. The full thing is published as [display-profiles](https://github.com/jordan-lee-code/display-profiles) - a generic tool for managing named display profiles on any Linux DE.
