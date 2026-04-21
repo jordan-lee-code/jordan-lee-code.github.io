@@ -12,7 +12,7 @@ tags:
   - productivity
 ---
 
-Once the [display mode switching](/2026/04/17/barrier-kvm-nvidia-display-workaround/) was working reliably, the next thing that started to bother me was the panel layout. Going from two screens to one and back meant the Cinnamon panel arrangement was left stranded in whatever state it happened to be: a single centred panel when two screens were up, or a sprawling two-panel setup squashed onto one monitor.
+Once the [display mode switching](/linux/2026/04/17/barrier-kvm-nvidia-display-workaround) was working reliably, the next thing that started to bother me was the panel layout. Going from two screens to one and back meant the Cinnamon panel arrangement was left stranded in whatever state it happened to be: a single centred panel when two screens were up, or a sprawling two-panel setup squashed onto one monitor.
 
 Fortunately, Cinnamon stores all panel configuration in dconf, which makes the solution pleasingly clean: snapshot each layout once, restore the right one when switching modes.
 
