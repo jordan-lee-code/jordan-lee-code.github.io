@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Migrating to Linux Mint Without a USB Drive - And Why I'm Not Going Back"
+title: "Migrating to Linux Mint Without a USB Drive, and Why I'm Not Going Back"
 date: 2026-04-17
 categories: [Linux]
 tags:
@@ -16,9 +16,9 @@ What made this migration more interesting than most is that I did it without a s
 
 ## The problem with Windows for gaming
 
-Before getting into the how, it's worth explaining the why. Windows gaming had become increasingly frustrating, not because the games didn't run, but because of everything around them. Windows Update ignoring active hours. Defender scans kicking in at the worst possible moments. Background telemetry and services that couldn't be fully disabled without registry surgery. The kind of overhead that doesn't show up in benchmarks but makes a system feel sluggish in practice.
+Before getting into the how, it's worth explaining the why. Windows gaming had become genuinely wearing, not because the games didn't run, but because of everything surrounding them. Update prompts ignoring active hours. Defender scans choosing the worst possible moments. Background telemetry that couldn't be fully silenced without going elbow-deep in the registry. The kind of overhead that doesn't show up in benchmarks but accumulates into something that makes a system feel hostile to actually using it.
 
-Losing a competitive game to a forced OS restart was the last straw. I'd been tolerating it for too long.
+Losing a competitive match to a forced restart was the last straw. I'd been tolerating it for too long, and the tolerance had run out.
 
 ## Installing Mint without USB boot media
 

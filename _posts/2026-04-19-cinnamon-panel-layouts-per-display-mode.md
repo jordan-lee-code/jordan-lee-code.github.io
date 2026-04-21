@@ -26,7 +26,7 @@ The relevant keys all sit under `/org/cinnamon/` in dconf:
 - `enabled-applets` — which applets are loaded and on which panel. Format: `['panel_id:zone:order:applet_uuid:instance_id', ...]`
 - `next-applet-id` — the counter used when adding new applets
 
-The monitor index in `panels-enabled` is zero-based and reflects only currently connected monitors. This matters: with two screens active, DP-0 is index 0 and DP-2 is index 1. With only DP-2 active, it becomes index 0. Snapshots need to account for this — the work layout snapshot should reference monitor 0 even though it's physically the right-hand screen.
+The monitor index in `panels-enabled` is zero-based and only reflects currently connected monitors, which is the kind of detail that will silently break your snapshots if you miss it. With two screens active, DP-0 is index 0 and DP-2 is index 1. With only DP-2 active, it becomes index 0. The work layout snapshot needs to reference monitor 0 even though it's physically the right-hand screen.
 
 ## Saving a layout
 

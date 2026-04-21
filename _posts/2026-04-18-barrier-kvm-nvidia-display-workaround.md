@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Splitting Work and Personal Computing with Barrier KVM - and Scripting Around an Nvidia Display Bug"
+title: "Splitting Work and Personal Computing with Barrier KVM, and Scripting Around an Nvidia Display Bug"
 date: 2026-04-18
 categories: [Linux]
 tags:
@@ -20,12 +20,12 @@ The setup works beautifully for what it does, but it introduced a problem I hadn
 
 My desk has two monitors connected to my personal PC via DisplayPort:
 
-- **DP-0** - left screen, personal primary
-- **DP-2** - right screen, work primary
+- **DP-0** (left screen, personal primary)
+- **DP-2** (right screen, work primary)
 
 Both are 2560x1440 panels running at 165Hz. When I'm working, my work laptop's output goes through the left monitor and my personal computing through the right monitor, so I can do research on my PC without consuming the limited resources of my laptop. When I'm done for the day, both screens come back up with the left as primary.
 
-The Barrier client handles the keyboard and mouse sharing seamlessly. The display layout, less so.
+The Barrier client handles the keyboard and mouse sharing without complaint. The display layout, less so.
 
 ## The Nvidia bug
 

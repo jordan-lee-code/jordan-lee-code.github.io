@@ -10,9 +10,9 @@ tags:
   - devops
 ---
 
-When you're managing infrastructure for a single product, Terraform is straightforward enough. You write some modules, maybe copy a few patterns between environments, and get on with it. When you're doing the same across 500+ repos spanning 10-20 product teams, that approach falls apart pretty quickly.
+When you're managing infrastructure for a single product, Terraform is straightforward enough. You write some modules, copy a few patterns between environments, and get on with it. When you're doing the same across 500+ repos spanning 10 to 20 product teams, that approach disintegrates fast and the debris lands everywhere.
 
-This is the problem we hit at The Access Group, and the shared module library we built to solve it has become one of the most valuable pieces of platform infrastructure we own.
+This is the problem we ran into at The Access Group. The shared module library we built to solve it has become, without question, one of the most valuable things my team owns.
 
 ## The drift problem
 
@@ -43,7 +43,7 @@ The `~> 2.0` constraint lets dependent repos absorb minor and patch updates auto
 
 ## Why Artifactory and semver matter
 
-Publishing to a registry rather than referencing Git directly might seem like extra overhead, but it makes a significant difference at scale.
+Publishing to a registry rather than referencing Git directly might seem like extra overhead, but at scale it changes everything.
 
 With Git references like `?ref=main` or a commit SHA, there's no real visibility into what changed or whether it's safe to upgrade. With semver-tagged releases, the intent is explicit. A patch bump from `1.4.1` to `1.4.2` is safe to consume without review. A minor bump adds functionality. A major bump means teams need to assess the breaking changes before upgrading.
 
@@ -64,10 +64,10 @@ The shift from per-team ad-hoc modules to a centralised, versioned library chang
 - **Compliance and policy changes** are implemented once and inherited everywhere.
 - **Platform engineers** can improve shared infrastructure without needing access to or context about every product repo.
 
-The trade-off is that the module library becomes a critical dependency. If a module has a bug, it affects every consumer. That puts a real premium on testing modules thoroughly before publishing (we use Terratest for this) and on keeping semver discipline tight so teams know exactly what they're signing up for when they upgrade.
+The trade-off is that the module library becomes load-bearing infrastructure for the entire estate. If a module has a bug, it touches every consumer simultaneously, which is a deeply uncomfortable feeling the first time it happens. That puts a real premium on testing thoroughly before publishing (we use Terratest) and on keeping semver discipline tight enough that teams know exactly what they're absorbing when they upgrade.
 
 ## Where it goes from here
 
 With 500+ repos consuming modules, rolling out a new major version still requires coordination. That's a problem we've increasingly been solving with AI tooling, but that's a post for another day.
 
-If you're managing Azure infrastructure across multiple teams and finding yourself copy-pasting Terraform patterns or applying the same fix in ten different places, a versioned module library published to a private registry is the most meaningful structural improvement I've made to this kind of work. The upfront investment is real, but the compounding returns are difficult to overstate.
+If you're managing Azure infrastructure across multiple teams and finding yourself copy-pasting Terraform patterns or applying the same fix in ten different places, a versioned module library published to a private registry is the single most effective structural change I've made to this kind of work. The upfront investment is real, but the compounding returns are difficult to overstate.
