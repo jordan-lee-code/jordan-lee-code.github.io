@@ -47,14 +47,32 @@ The rework is real. The wasted time is real. What's particularly unpleasant abou
 
 You end up carrying the cost of being dismissed twice: once in the moment when it happens, and again in the aftermath when the consequences get attributed to your competence rather than to the decision that ignored you.
 
+## The longer arc
+
+The immediate damage is one thing. The compounding damage is another. Incident by incident, rework by rework, the impression that you're not quite certain of what you're doing accumulates quietly in the background of your career. Performance reviews draw on the year's evidence. Promotion decisions draw on perception. Salary conversations happen in the context of the professional reputation you've built, and that reputation is shaped in part by the moments where your input was dismissed and the fallout landed on your record anyway.
+
+The cost isn't just the bad quarter or the project that had to be unpicked. It's the senior engineer title that takes longer to arrive, the pay band that doesn't reflect the work, the sponsorship that goes to someone whose ideas were heard the first time. None of it is dramatic or obvious in any single instance. It's the slow compounding of a hundred small dismissals into a career trajectory that doesn't quite match the capability behind it.
+
+## When you name it
+
+Then there's what happens when you try to say any of this out loud.
+
+You're imagining it. You're too sensitive. You're reading intent into something that was perfectly innocuous. The person who talked over you is lovely, actually, and means well, and this isn't really about gender, is it, because that seems like a stretch. Have you considered that the reason your idea didn't land was something else entirely?
+
+The dismissal that happened in the meeting gets repeated in the conversation about the meeting, and the second dismissal is often more wearing than the first. At least in the meeting, the subject was the work. In the debrief, the subject is your perception — your reliability as a narrator of your own experience. Being talked over is one thing. Being told that what you observed didn't happen the way you observed it is something else entirely, and it carries its own particular exhaustion.
+
 ## Confidence as a gendered currency
 
-Men in tech are rewarded for arrogance in ways that women aren't, and the distinction worth drawing isn't between arrogance and genuine expertise. It's between genuine expertise and the performative confidence that gets mistaken for it: the bold claim, the unqualified recommendation, the "here's exactly what we should do" delivered without caveats or supporting detail.
+Men in tech are rewarded for arrogance in ways that women aren't, and the distinction worth drawing isn't between arrogance and genuine expertise. It's between hollow, performative confidence that hasn't been earned and the real thing — and the uncomfortable part is that the room's response doesn't track this distinction at all. Men get the warm reception for the bold claim delivered without substance. Women get the complicated reception for the substantiated view delivered with conviction. The asymmetry isn't at the edges; it's the whole shape of the thing.
 
-When a man delivers that in a room, the response tends to be warm. People lean in, credit the decisiveness, reach for alignment. When a woman delivers the same thing, the reception is more complicated. Confidence reads as aggression. Certainty reads as inflexibility. The same words from the same position carry different weight depending on who's saying them, and no amount of iterating on your delivery changes the underlying dynamic.
+When a man swings confidently in a room, there's a particular quality to how other men receive it. Not just tolerance, not neutrality — something closer to genuine pleasure. They lean in, match the energy, reach enthusiastically for alignment. You can watch it happen in real time. The arrogance isn't just forgiven; it's enjoyed, rewarded with an animated, engaged response that the most careful and well-reasoned contribution in the room doesn't reliably get.
 
-I've spent time trying to calibrate to it, dialling down assertion in one context, adding more qualification in another. It doesn't work, not because the calibration is imprecise but because calibration is the wrong frame entirely. The standard isn't one you can optimise your way into meeting, because it shifts depending on who's applying it.
+When a woman delivers the same thing, the temperature drops. Confidence reads as aggression. Certainty reads as inflexibility. The same words from the same position carry different weight depending on who's saying them, and the gap between those two receptions is not something you can bridge by adjusting your tone.
 
-The correct move is to stop treating it as a solvable problem and start treating it as a feature of the environment you've already accounted for. Claim the expertise you have, without apology and without the trailing qualification that signals you're checking whether it's acceptable to hold it. If that reads as arrogance in a room where the same behaviour from someone else would read as confidence, that's information about the room.
+I spent a long time trying anyway. Soften the delivery here, add a qualifier there, frame the assertion as a question in this context and a suggestion in that one. The effort was real and the failure was consistent. It didn't make the ideas land better; it made them easier to dismiss, which is the opposite of what I was trying to achieve. At some point I had to sit with the uncomfortable realisation that I had been working very hard on a problem that was never mine to solve.
+
+Calibration is the wrong frame entirely. The standard isn't one you can optimise your way into meeting, because it shifts in response to who's applying it. What looks like a bar to clear is a moving target, and the energy spent chasing it is energy taken from the actual work.
+
+Claim the expertise you have, without apology and without the trailing qualification that signals you're checking whether it's acceptable to hold it. If that reads as arrogance in a room where the same behaviour from someone else would read as confidence, that's information about the room.
 
 Take up the space. Stop managing other people's discomfort with it.
