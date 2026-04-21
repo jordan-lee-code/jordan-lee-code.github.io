@@ -59,6 +59,20 @@ There's also a calibration problem. The temptation is to trust the output more t
 
 The rate limit complaints the video mentions are real. The rolling 5-hour window, the weekly cap, the peak and off-peak tiers — it's genuinely complicated. But the telling thing is that almost nobody frustrated with the limits is suggesting switching tools. The conversation is about upgrading plans, not leaving. That's a reasonable signal about how much people actually value it once they've gotten past the learning curve.
 
+## Not all AI generation is the same
+
+Everything I've said above is about code generation, and the enthusiasm is genuine. But I think it's worth being explicit about where I draw the line, because I don't think the same logic extends to image and video generation.
+
+The reason is specific: generated imagery is consumed passively. Someone sees a realistic photo or video and has no signal that it isn't real. The asymmetry between production cost (near zero) and believability (high) makes it a misinformation accelerant in a way code gen isn't. A hallucinated code snippet fails visibly when you run it. A generated image of something that never happened just looks like a photograph.
+
+The communities most harmed aren't random. They're the ones already targeted by misinformation and harassment: minorities, women in public life, marginalised groups, political dissidents. Deepfakes disproportionately target these groups. The technology doesn't create a new category of harm — it lowers the barrier to existing harms that were already causing serious damage.
+
+There's also a consent problem that doesn't have a clean answer. These models were trained on work scraped from illustrators, photographers, and designers — many of them freelancers — without meaningful agreement. The output competes with those people directly. That's not democratising creativity; it's displacing the people whose work built the training corpus.
+
+Code gen lands differently for a structural reason: code isn't passively consumed. It has to be read, reviewed, tested, and deployed by someone who takes responsibility for it. The human stays in the loop in a way that doesn't apply to a generated image dropped into a news article. And the most compelling use case for code gen — building tools you'd otherwise pay subscriptions for, reducing dependency on commercial SaaS, making self-hosting accessible — is actually about increasing individual ownership rather than replacing skilled work.
+
+Code gen accelerates people who already have a foundation. Image gen displaces the people who built theirs. That asymmetry is why one sits fine with me and the other doesn't.
+
 ## What I've settled on
 
 Claude Code for planning, orchestration, and anything that benefits from structured reasoning before implementation. Copilot for in-editor completions and boilerplate. Devin for genuinely isolated tasks with clear acceptance criteria where the risk of context failure is low.
