@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.author.name | default: site.title }} - CV</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 11px;
+      line-height: 1.5;
+      color: #1a1a1a;
+      background: #fff;
+      padding: 32px 40px;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .tagline {
+      font-size: 13px;
+      color: #444;
+      margin-top: 2px;
+    }
+
+    .contact {
+      margin-top: 6px;
+      font-size: 10.5px;
+      color: #444;
+    }
+
+    .contact a { color: #444; text-decoration: none; }
+    .contact span { margin: 0 6px; color: #bbb; }
+
+    section { margin-bottom: 18px; }
+
+    h2 {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #555;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+
+    .role-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .role-company { font-size: 12.5px; font-weight: 700; }
+    .role-dates { font-size: 10px; color: #666; white-space: nowrap; }
+    .role-title { font-size: 10.5px; color: #444; margin-bottom: 5px; }
+    .role-location { font-size: 10px; color: #888; }
+
+    ul { padding-left: 14px; margin-top: 4px; }
+    ul li { margin-bottom: 2px; color: #222; }
+
+    .role { margin-bottom: 12px; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 24px;
+    }
+
+    .skill-group h3 { font-size: 10.5px; font-weight: 700; margin-bottom: 3px; color: #333; }
+    .skill-group p { color: #444; font-size: 10.5px; }
+
+    .cert-list, .edu-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px 24px;
+    }
+
+    .cert-item, .edu-item { font-size: 10.5px; color: #333; }
+    .in-progress { color: #555; font-style: italic; }
+
+    @media print {
+      body { padding: 0; }
+      @page { margin: 20mm 16mm; size: A4; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>{{ site.social.name | default: site.title }}</h1>
+    <p class="tagline">{{ site.tagline }}</p>
+    <p class="contact">
+      Leeds, UK
+      <span>|</span>
+      <a href="mailto:{{ site.social.email }}">{{ site.social.email }}</a>
+      <span>|</span>
+      {% assign linkedin = site.social.links | first %}
+      <a href="{{ linkedin }}">linkedin.com/in/jordan-lee-devops</a>
+      <span>|</span>
+      <a href="{{ site.url }}">{{ site.url | remove: 'https://' }}</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>Profile</h2>
+    <p>{{ site.data.cv.profile }}</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    {% for role in site.data.cv.experience %}
+    <div class="role">
+      <div class="role-header">
+        <span class="role-company">{{ role.company }}</span>
+        <span class="role-dates">{{ role.dates }}</span>
+      </div>
+      <div class="role-title">{{ role.title }} <span class="role-location">· {{ role.location }}</span></div>
+      {% if role.bullets.size > 0 %}
+      <ul>
+        {% for bullet in role.bullets %}
+        <li>{{ bullet }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      {% for skill in site.data.cv.skills %}
+      <div class="skill-group">
+        <h3>{{ skill.category }}</h3>
+        <p>{{ skill.items | join: ', ' }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="cert-list">
+      {% for cert in site.data.cv.certifications %}
+      <div class="cert-item">{{ cert }}</div>
+      {% endfor %}
+      {% for cert in site.data.cv.certifications_in_progress %}
+      <div class="cert-item in-progress">In progress: {{ cert }}</div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="edu-list">
+      {% for edu in site.data.cv.education %}
+      <div class="edu-item"><strong>{{ edu.institution }}</strong> — {{ edu.subject }} ({{ edu.years }})</div>
+      {% endfor %}
+    </div>
+  </section>
+
+</body>
+</html>

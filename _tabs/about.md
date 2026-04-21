@@ -10,46 +10,24 @@ Currently at **The Access Group**, where I've owned the cloud infrastructure lay
 
 ## Technical Skills
 
-### Cloud & IaC
+{% for skill in site.data.cv.skills %}
+### {{ skill.category }}
 
-- Microsoft Azure
-- Terraform, Bicep, ARM Templates
-- Azure DevOps, GitLab CI/CD
-
-### CI/CD & Build Infrastructure
-
-- Azure Pipelines (YAML), shared pipeline template libraries
-- Hosted build agent management — VMSS-based auto-scaling pools and containerised agents
-- Pipeline-driven Terraform, Bicep, and ARM deployments with PR approval gates
-
-### Scripting & Automation
-
-- PowerShell, Bash, Azure CLI
-- Pipeline and infrastructure automation at scale
-
-### AI-Assisted Engineering
-
-- Claude Code (subagent orchestration for multi-repo IaC changes)
-- Devin, GitHub Copilot
+{% for item in skill.items %}- {{ item }}
+{% endfor %}
+{% endfor %}
 
 ## Certifications
 
-- AZ-900: Microsoft Azure Fundamentals
-- MCTS: Windows 7 Configuring
-- MTA: Windows Server Administration Fundamentals
-- MTA: Security Fundamentals
-- MTA: Windows Operating System Fundamentals
-- MTA: Networking Fundamentals
-- Level 3 Diploma for ICT Systems and Principles for IT Professionals
-- Level 3 Diploma in ICT Professional Competence
+{% for cert in site.data.cv.certifications %}- {{ cert }}
+{% endfor %}
 
 ### In Progress
 
-- AZ-104: Microsoft Azure Administrator
-- AZ-305: Microsoft Azure Solutions Architect Expert
+{% for cert in site.data.cv.certifications_in_progress %}- {{ cert }}
+{% endfor %}
 
 ## Education
 
-**Zenos IT Academy** — Information Technology (2010–2011)
-**Stanborough School** — General Studies (2005–2010)
-
+{% for edu in site.data.cv.education %}**{{ edu.institution }}** — {{ edu.subject }} ({{ edu.years }})
+{% endfor %}

@@ -1,0 +1,91 @@
+profile: >
+  DevOps & Cloud Infrastructure Engineer specialising in Azure infrastructure for large-scale SaaS
+  platforms. I own the cloud infrastructure layer for a multi-product platform spanning 500+ repos
+  and 10-20 product teams, building reusable Terraform and Bicep modules, shared CI/CD tooling,
+  hosted build agent infrastructure, and an emerging AI platform layer.
+
+skills:
+  - category: "Cloud & IaC"
+    items:
+      - "Microsoft Azure"
+      - "Terraform, Bicep, ARM Templates"
+      - "Azure DevOps, GitLab CI/CD"
+  - category: "CI/CD & Build Infrastructure"
+    items:
+      - "Azure Pipelines (YAML), shared pipeline template libraries"
+      - "Hosted build agent management — VMSS-based auto-scaling pools and containerised agents"
+      - "Pipeline-driven Terraform, Bicep, and ARM deployments with PR approval gates"
+  - category: "Scripting & Automation"
+    items:
+      - "PowerShell, Bash, Azure CLI"
+      - "Pipeline and infrastructure automation at scale"
+  - category: "AI-Assisted Engineering"
+    items:
+      - "Claude Code (subagent orchestration for multi-repo IaC changes)"
+      - "Devin, GitHub Copilot"
+
+certifications:
+  - "AZ-900: Microsoft Azure Fundamentals"
+  - "MCTS: Windows 7 Configuring"
+  - "MTA: Windows Server Administration Fundamentals"
+  - "MTA: Security Fundamentals"
+  - "MTA: Windows Operating System Fundamentals"
+  - "MTA: Networking Fundamentals"
+  - "Level 3 Diploma for ICT Systems and Principles for IT Professionals"
+  - "Level 3 Diploma in ICT Professional Competence"
+
+certifications_in_progress:
+  - "AZ-104: Microsoft Azure Administrator"
+  - "AZ-305: Microsoft Azure Solutions Architect Expert"
+
+education:
+  - institution: "Zenos IT Academy"
+    subject: "Information Technology"
+    years: "2010–2011"
+  - institution: "Stanborough School"
+    subject: "General Studies"
+    years: "2005–2010"
+
+experience:
+  - company: "The Access Group"
+    title: "DevOps & Cloud Infrastructure Engineer"
+    dates: "May 2021 – Present"
+    location: "Pontefract, UK"
+    bullets:
+      - "Maintain a shared library of reusable Terraform and Bicep modules (15+ Azure services) published to Artifactory with semantic versioning, consumed by product pipelines across 500+ repos"
+      - "Run a shared Azure Pipelines YAML template library standardising CI/CD across all product repos, with gated environment promotion and PR-based approval gates"
+      - "Manage hosted build agent infrastructure using VMSS-based auto-scaling pools and containerised agents"
+      - "Maintain AI/ML platform infrastructure including LLM gateway configuration, serverless GPU model hosting, and agentic platform services on Azure"
+      - "Use Claude Code subagent orchestration to roll out IaC changes across hundreds of repos in parallel, reducing week-long rollouts to hours"
+
+  - company: "Link Group (LNK)"
+    title: "Platform Engineer"
+    dates: "October 2020 – May 2021"
+    location: "Leeds, UK"
+    bullets:
+      - "Wrote Terraform for fault-tolerant, region-resilient Azure solutions in an agile delivery environment"
+      - "Sole owner of Windows Virtual Desktop infrastructure including image management and access control"
+      - "Supported on-premises to Azure migrations across multiple EMEA domains"
+
+  - company: "Piksel"
+    title: "3rd Line Engineer"
+    dates: "February 2018 – June 2019"
+    location: "York, UK"
+    bullets:
+      - "Supported multi-customer Wintel environments across Azure, AWS, hybrid cloud, and on-premises"
+      - "Drove the team's shift to a DevOps workflow using Kanban and GitLab-based CI/CD pipelines"
+      - "Built Azure Monitor customer monitoring and automated monthly patching via SCCM using PowerShell"
+
+  - company: "Computacenter"
+    title: "2nd Line Wintel Analyst / Service Desk Analyst"
+    dates: "June 2012 – February 2018"
+    location: "Hatfield, UK"
+    bullets:
+      - "Supported a broad customer base across a shared service model covering critical incident management and datacentre migration exercises"
+      - "Improved first-time fix rates by implementing automated ticket routing and ITSM call templates"
+
+  - company: "Fujitsu UK"
+    title: "1st Line Analyst"
+    dates: "July 2011 – June 2012"
+    location: "Stevenage, UK"
+    bullets: []
