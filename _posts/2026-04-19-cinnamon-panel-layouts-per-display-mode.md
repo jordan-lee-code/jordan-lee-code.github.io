@@ -12,9 +12,9 @@ tags:
   - productivity
 ---
 
-Following on from [the previous post](/2026/04/18/barrier-kvm-nvidia-display-workaround/) about scripting display mode switching, the next logical step was making the Cinnamon panel layout switch alongside the monitors. Running one screen for work and two for personal means the panel arrangement should change too. A single centred panel on one monitor versus panels spread across two.
+Once the [display mode switching](/2026/04/18/barrier-kvm-nvidia-display-workaround/) was working reliably, the next thing that started to bother me was the panel layout. Going from two screens to one and back meant the Cinnamon panel arrangement was left stranded in whatever state it happened to be — a single centred panel when two screens were up, or a sprawling two-panel setup squashed onto one monitor.
 
-Cinnamon stores all panel configuration in dconf, which makes this straightforward: snapshot each layout, restore the right one when switching modes.
+Fortunately, Cinnamon stores all panel configuration in dconf, which makes the solution pleasingly clean: snapshot each layout once, restore the right one when switching modes.
 
 ## How Cinnamon stores panel config
 
@@ -112,4 +112,4 @@ The applets stay the same — only the panel count and monitor assignment change
 
 If you later change the panel layout in either mode — add an applet, resize the panel, enable autohide — just run `display-save-layout.sh work` or `display-save-layout.sh personal` again to update the snapshot. The save script overwrites the previous file.
 
-Combined with the display switching from the previous post, switching between work and personal is now a single menu click that handles monitors, refresh rate, and panel layout in one go.
+Combined with the display switching from the previous post, switching between work and personal is now a single menu click that carries everything with it: monitors, refresh rate, and panel layout, all in one motion. It's the kind of small automation that, once it's in place, makes the previous state feel quietly absurd.
