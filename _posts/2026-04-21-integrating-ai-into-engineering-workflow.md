@@ -24,11 +24,21 @@ I understand why that framing exists. It's a compelling sales narrative. But it 
 
 A junior engineer isn't just someone who writes code. They ask questions when something feels off. They push back when a task doesn't make sense. They learn the codebase and accumulate institutional knowledge. An autonomous agent handed a ticket doesn't know that the naming convention in that repo is intentionally inconsistent for a historical reason, or that the team is mid-migration and the "right" approach today would break everything in two weeks. It just does what it's told, with confidence.
 
-I've watched Devin produce technically correct work that was completely wrong for the context. It's impressive and genuinely useful for isolated, well-defined tasks. For anything that requires judgment, it struggles.
+I've watched Devin produce technically correct work that was completely wrong for the context. And it turns out I'm not alone in that assessment. The video below covers developer sentiment around Claude Code in some depth, and it's worth noting that the presenter calls Devin out directly: it "never quite took off in part because they kind of lied about a lot of the things it could do." That matches what I found in practice. It's impressive and genuinely useful for isolated, well-defined tasks. For anything that requires judgment, it struggles.
 
 ## Where Claude Code is different
 
 {% include embed/youtube.html id='LACyqdAfnaw' %}
+
+One of the more interesting things covered here is the source code leak from a few months ago. Anthropic accidentally published a source map in the NPM package, exposing the client-side code. The conclusion the video draws: there's no secret in the software. It's just calling the Claude API in a loop and invoking tools based on model output. The comment section response to that apparently amounted to "yeah, duh."
+
+That's fair. But I think the "there's no secret" framing slightly misses the point. The value was never going to be in the wrapper. It's in what happens when a model that's genuinely strong at reasoning and code is given the right scaffolding to operate in a real development environment.
+
+There's also some interesting stuff in the leaked code that didn't make headlines as much: a regex for detecting angry users to flag when things are going wrong, a mechanism to detect and misdirect attempts to distill the model, and a couple of unreleased features including "dream mode" for compressing memories and an undercover mode for contributing to open source without revealing the Claude Code origin. Whether those features ship or not, it suggests the team is thinking seriously about Claude Code as a long-running, context-aware collaborator rather than a stateless query tool.
+
+The video also points out that Claude Code sits 40th on the Terminal Bench leaderboard. That sounds damning until you consider what Terminal Bench is measuring: benchmark task completion in isolation. The model itself (Opus 4.5) sits near the top of the same leaderboard when run through other agent harnesses. So the question isn't whether the model can do the thing. It's whether the wrapper is optimised for benchmark tasks, and clearly it isn't. That doesn't tell you much about how it performs on the kind of complex, multi-step infrastructure work I'm actually doing.
+
+The form factor argument in the video is the most interesting bit, and I think it's largely right. Claude Code sits between two existing categories: IDE tools like Cursor and Copilot, where you're watching every change in real time, and no-code tools like Replit and Bolt, where you're not really supposed to look at the code at all. The terminal occupies a middle ground. It feels technical to developers. You're in a real environment where changes are reviewable, where you can send things for review, where you're not locked in a sandbox. But you're also not micromanaging every edit.
 
 Claude Code doesn't try to replace you. It works alongside you in the IDE and positions itself as a planning and orchestration layer rather than an autonomous executor. That distinction matters a lot in practice.
 
@@ -46,10 +56,12 @@ AI tooling is only useful if you invest in feeding it the right context. That me
 
 There's also a calibration problem. The temptation is to trust the output more than you should early on, then overcorrect and barely use it after the first bad result. The useful relationship is somewhere in the middle: treat it like a capable but context-limited collaborator whose work you always review, not an oracle and not a toy.
 
+The rate limit complaints the video mentions are real. The rolling 5-hour window, the weekly cap, the peak and off-peak tiers — it's genuinely complicated. But the telling thing is that almost nobody frustrated with the limits is suggesting switching tools. The conversation is about upgrading plans, not leaving. That's a reasonable signal about how much people actually value it once they've gotten past the learning curve.
+
 ## What I've settled on
 
 Claude Code for planning, orchestration, and anything that benefits from structured reasoning before implementation. Copilot for in-editor completions and boilerplate. Devin for genuinely isolated tasks with clear acceptance criteria where the risk of context failure is low.
 
-The "AI replaces engineers" narrative mostly benefits people selling AI products. What I've actually found is that good AI tooling makes experienced engineers faster at the parts of the job that involve managing complexity. It doesn't do much for the judgment, the context, or the accountability, and those are the parts that are hardest to replace.
+The video's conclusion — that there's no hidden secret in the software, just strong models and the right positioning — is probably the most honest framing I've come across. It doesn't try to oversell what's happening under the hood, and it acknowledges that the obsession is partly about form factor and developer psychology, not just raw capability.
 
-That's not a criticism. It's just an accurate description of where the tools are. The engineers who'll do well with AI are the ones who treat it as a force multiplier on what they already know how to do, rather than a shortcut around having to know things in the first place.
+The engineers who'll do well with AI are the ones who treat it as a force multiplier on what they already know how to do, rather than a shortcut around having to know things in the first place. Claude Code's positioning leans into that, whether intentionally or not, and I think that's a big part of why it landed the way it did.
