@@ -10,7 +10,7 @@ tags:
   - proton
 ---
 
-I'd been putting off switching to Linux for years. Not because I didn't want to, I'd been curious about it for a long time, but the timing never felt right and "wipe and reinstall" felt like a weekend I didn't have. What finally pushed me over the edge was crashing out of a competitive Overwatch match mid-game because Windows decided it was a good time to apply an update and restart. That was it. Decision made.
+I'd been putting off switching to Linux for years. Not because I didn't want to, I'd been curious about it for a long time, but the timing never felt right and "wipe and reinstall" felt like a weekend I didn't have. What finally pushed me over the edge was crashing out of a competitive Overwatch match mid-game because Windows had quietly decided it was a good time to apply an update and restart. That was it. The decision made itself.
 
 What made this migration more interesting than most is that I did it without a single USB drive.
 
@@ -68,9 +68,9 @@ The performance story is genuinely better than I expected. For many titles, fram
 
 ## Was it worth it?
 
-Absolutely. The system feels faster, boot times are shorter, and there's no background noise from an OS trying to upsell me on OneDrive or schedule a restart at the worst possible moment. The gaming experience for the titles I play most is equivalent to Windows, and in some cases better.
+Unreservedly. The system feels lighter and more responsive, boot times are genuinely shorter, and there's none of that low-grade background noise from an OS trying to upsell me on OneDrive or interrupt me at the worst possible moment. For the titles I care about most, the gaming experience is equivalent to Windows, and in some cases noticeably better.
 
-The no-USB migration route added a few extra steps, but it was a useful exercise and meant I could do the whole thing without any downtime or dependency on spare hardware. If you're on the fence about Linux for gaming, Proton's current state makes it a much more realistic option than it was even two years ago.
+The no-USB route added a few steps that a standard install wouldn't need, but it was a satisfying exercise and meant the whole migration happened without any downtime or dependency on hardware I didn't have. If you've been hesitating about Linux for gaming, Proton's current state makes it a far more realistic choice than it was even two years ago, and the barrier keeps dropping.
 
 ---
 

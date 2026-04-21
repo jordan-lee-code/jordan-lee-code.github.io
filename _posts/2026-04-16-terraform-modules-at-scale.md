@@ -18,7 +18,7 @@ This is the problem we hit at The Access Group, and the shared module library we
 
 Before centralising, each product team was largely responsible for defining their own Azure infrastructure. In practice that meant similar resources being defined in subtly different ways across repos. Different naming conventions, inconsistent tagging, varying security configurations, no shared baseline.
 
-The consequences were predictable. Security fixes had to be manually applied to each repo. New products reinvented the wheel. Any platform-wide change, whether a policy update or a new compliance requirement, meant touching dozens of codebases individually.
+The consequences were exactly what you'd expect, and they weren't subtle. Security fixes had to be manually tracked down and applied across individual repos. New products reinvented the same infrastructure patterns from scratch. Any platform-wide change, whether a policy update or a new compliance requirement, meant opening dozens of codebases one by one.
 
 ## One repo per module, published to Artifactory
 
@@ -57,7 +57,7 @@ Module upgrades get tested in staging before reaching production, and there's a 
 
 ## What this unlocks
 
-The shift from per-team ad-hoc modules to a centralised, versioned library changes the nature of platform work quite a bit:
+The shift from per-team ad-hoc modules to a centralised, versioned library changes what platform work actually feels like:
 
 - **A single security fix** applied to a module propagates to all consumers on the next apply cycle, with no coordination needed across individual teams.
 - **New product onboarding** becomes a matter of composing existing modules rather than writing infrastructure from scratch.
@@ -70,4 +70,4 @@ The trade-off is that the module library becomes a critical dependency. If a mod
 
 With 500+ repos consuming modules, rolling out a new major version still requires coordination. That's a problem we've increasingly been solving with AI tooling, but that's a post for another day.
 
-If you're managing Azure infrastructure across multiple teams and finding yourself copy-pasting Terraform or applying the same change in ten different places, a versioned module library published to a private registry is the most effective structural fix I've found.
+If you're managing Azure infrastructure across multiple teams and finding yourself copy-pasting Terraform patterns or applying the same fix in ten different places, a versioned module library published to a private registry is the most meaningful structural improvement I've made to this kind of work. The upfront investment is real, but the compounding returns are difficult to overstate.

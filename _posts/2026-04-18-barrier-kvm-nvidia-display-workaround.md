@@ -14,7 +14,7 @@ tags:
 
 One of the realities of working from home is that your personal machine and your work setup inevitably end up competing for the same desk space. My solution has been [Barrier](https://github.com/debauchee/barrier), a software KVM that lets me share a single keyboard and mouse across my personal Linux PC and my work laptop, each on their own display, no hardware switch required.
 
-The setup works well, but it introduced a problem I hadn't anticipated. Every time I switch contexts between work and personal use, my monitor configuration needs to change. And thanks to a persistent Nvidia driver bug on Linux, those settings (refresh rate especially) don't survive reliably across the switch.
+The setup works beautifully for what it does, but it introduced a problem I hadn't anticipated. Every context switch between work and personal means the monitor configuration needs to change, and thanks to a persistent Nvidia driver bug on Linux, those settings, refresh rate especially, don't survive the transition reliably.
 
 ## The setup
 
@@ -81,4 +81,4 @@ Now every shutdown and restart prompts for the next display mode before acting. 
 
 Switching between work and personal is now two clicks: open the menu, pick the display mode. The 165Hz refresh rate and correct screen layout are applied consistently on every login, and the Nvidia driver's forgetfulness is no longer something I have to think about. The script just reapplies what should have been there anyway.
 
-It's a more involved workaround than should be necessary for something as basic as a static display configuration, but on Linux that's sometimes the deal. Once it's scripted, it stays solved.
+It's more involved than anything this mundane ought to require, and I won't pretend there isn't a quiet indignation in having to script around a display driver that should simply work. But once it's scripted it stays solved, and the frustration collapses into something you stop thinking about entirely.
