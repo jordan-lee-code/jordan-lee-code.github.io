@@ -47,7 +47,7 @@ cinnamon-display-profiles/
 └── README.md
 ```
 
-`install.sh` copies the scripts to `~/bin/`, drops the desktop entries into `~/.local/share/applications/`, and installs the autostart entry. The README covers how to change the monitor output names and resolution to match your own setup, the panel layout snapshot workflow, and the optional Cinnamenu sidebar patch.
+`install.sh` symlinks the scripts into `~/bin/` and the desktop entries into `~/.local/share/applications/` and `~/.config/autostart/` rather than copying them. That means editing anything in the repo is reflected immediately with no reinstall step, pull a change and it's live. The README covers how to change the monitor output names and resolution to match your own setup, the panel layout snapshot workflow, and the optional Cinnamenu sidebar patch.
 
 ## Using it
 
