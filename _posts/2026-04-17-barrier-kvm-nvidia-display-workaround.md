@@ -65,13 +65,13 @@ The shutdown and restart buttons in Cinnamenu's sidebar are defined in `sidebar.
 // Shutdown
 () => {
     this.appThis.menu.close();
-    Util.spawnCommandLine('/home/jordan/bin/display-shutdown.sh');
+    Util.spawnCommandLine('/home/YOUR_USER/bin/display-shutdown.sh');
 }
 
 // Restart (added)
 () => {
     this.appThis.menu.close();
-    Util.spawnCommandLine('/home/jordan/bin/display-restart.sh');
+    Util.spawnCommandLine('/home/YOUR_USER/bin/display-restart.sh');
 }
 ```
 
@@ -82,3 +82,5 @@ Now every shutdown and restart prompts for the next display mode before acting. 
 Switching between work and personal is now two clicks: open the menu, pick the display mode. The 165Hz refresh rate and correct screen layout are applied consistently on every login, and the Nvidia driver's forgetfulness is no longer something I have to think about. The script just reapplies what should have been there anyway.
 
 It's more involved than anything this mundane ought to require, and I won't pretend there isn't a quiet indignation in having to script around a display driver that should simply work. But once it's scripted it stays solved, and the frustration collapses into something you stop thinking about entirely.
+
+The scripts grew from here into something more general: named profiles, a setup wizard, and DE-agnostic hooks. The full thing is on GitHub as [display-profiles](https://github.com/jordan-lee-code/display-profiles).
