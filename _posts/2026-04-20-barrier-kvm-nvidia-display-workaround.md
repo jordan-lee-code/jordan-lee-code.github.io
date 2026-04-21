@@ -2,6 +2,7 @@
 layout: post
 title: "Splitting Work and Personal Computing with Barrier KVM - and Scripting Around an Nvidia Display Bug"
 date: 2026-04-20
+categories: [Linux]
 author_profile: true
 tags:
   - linux

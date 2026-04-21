@@ -2,6 +2,7 @@
 layout: post
 title: "Per-Mode Panel Layouts in Cinnamon Using dconf Snapshots"
 date: 2026-04-20
+categories: [Linux]
 tags:
   - linux
   - linux-mint
