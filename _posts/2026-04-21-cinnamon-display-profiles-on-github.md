@@ -13,7 +13,7 @@ tags:
   - open-source
 ---
 
-Over the past few days I've written two posts about fighting the Nvidia driver bug that keeps dropping display settings on Linux Mint: [the initial display switching scripts](/2026/04/17/barrier-kvm-nvidia-display-workaround/) and [adding per-profile Cinnamon panel layouts](/2026/04/18/cinnamon-panel-layouts-per-display-mode/). What started as a couple of `xrandr` one-liners has grown into something more general purpose.
+Over the past few days I've written two posts about fighting the Nvidia driver bug that keeps dropping display settings on Linux Mint: [the initial display switching scripts](/linux/2026/04/17/barrier-kvm-nvidia-display-workaround/) and [adding per-profile Cinnamon panel layouts](/linux/2026/04/18/cinnamon-panel-layouts-per-display-mode/). What started as a couple of `xrandr` one-liners has grown into something more general purpose.
 
 The repo is on GitHub: [jordan-lee-code/display-profiles](https://github.com/jordan-lee-code/display-profiles).
 
