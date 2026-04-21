@@ -49,7 +49,7 @@ The harder problem isn't choosing between tools. It's changing how you work in t
 
 AI tooling is only useful if you invest in feeding it the right context. That means writing better task definitions, being more explicit about constraints and intent, and building the habit of thinking out loud in a way the tool can engage with. None of that comes naturally, and there's a period (weeks, maybe longer) where using AI tooling actively slows you down because you're learning how to work with it rather than just doing the work.
 
-There's also a calibration problem. The temptation is to trust the output more than you should early on, then overcorrect and barely use it after the first bad result. The useful relationship is somewhere in the middle: treat it like a capable but context-limited collaborator whose work you always review, not an oracle and not a toy.
+There's also a calibration problem that catches most people. The temptation is to trust the output too much early on, then swing hard the other way after the first genuinely bad result and barely use the thing at all. I've done both. The relationship that actually works sits somewhere in the middle: a capable but context-limited collaborator whose work you always review, not an oracle and not a toy.
 
 The rate limit complaints the video mentions are real. The rolling 5-hour window, the weekly cap, the peak and off-peak tiers — genuinely complicated to navigate. But the telling thing is that almost nobody frustrated with the limits is suggesting switching tools. The conversation is about upgrading plans, not leaving, and that's a more honest signal of how much people value it once they've cleared the learning curve than any benchmark score.
 
@@ -61,7 +61,7 @@ The reason is specific: generated imagery is consumed passively. Someone sees a 
 
 The communities most harmed aren't random. They're the ones already targeted by misinformation and harassment: minorities, women in public life, trans people, people of colour, marginalised groups, political dissidents. Deepfakes disproportionately target these groups. The technology doesn't create a new category of harm. It lowers the barrier to existing harms that were already causing serious damage.
 
-There's also a consent problem that doesn't have a clean answer. These models were trained on work scraped from illustrators, photographers, and designers, many of them freelancers, without meaningful agreement. The output competes with those people directly. That's not democratising creativity; it's displacing the people whose work built the training corpus.
+There's also a consent problem that doesn't have a clean answer. These models were trained on work scraped from illustrators, photographers, and designers, many of them freelancers, without consent. The output competes with those people directly. That's not democratising creativity; it's displacing the people whose work built the training corpus.
 
 Code gen lands differently for a structural reason: code isn't passively consumed. It has to be read, reviewed, tested, and deployed by someone who takes responsibility for it. The human stays in the loop in a way that doesn't apply to a generated image dropped into a news article. And the most compelling use cases for code gen, building tools you'd otherwise pay subscriptions for, reducing dependency on commercial SaaS, making self-hosting genuinely accessible, are fundamentally about increasing individual ownership rather than displacing skilled work.
 
