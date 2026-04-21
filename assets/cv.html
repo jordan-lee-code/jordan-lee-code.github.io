@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordan Lee - CV</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 11px;
+      line-height: 1.5;
+      color: #1a1a1a;
+      background: #fff;
+      padding: 32px 40px;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .tagline {
+      font-size: 13px;
+      color: #444;
+      margin-top: 2px;
+    }
+
+    .contact {
+      margin-top: 6px;
+      font-size: 10.5px;
+      color: #444;
+    }
+
+    .contact a { color: #444; text-decoration: none; }
+    .contact span { margin: 0 6px; color: #bbb; }
+
+    section { margin-bottom: 18px; }
+
+    h2 {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #555;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+
+    .role-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .role-company {
+      font-size: 12.5px;
+      font-weight: 700;
+    }
+
+    .role-dates {
+      font-size: 10px;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .role-title {
+      font-size: 10.5px;
+      color: #444;
+      margin-bottom: 5px;
+    }
+
+    .role-location {
+      font-size: 10px;
+      color: #888;
+    }
+
+    ul {
+      padding-left: 14px;
+      margin-top: 4px;
+    }
+
+    ul li {
+      margin-bottom: 2px;
+      color: #222;
+    }
+
+    .role { margin-bottom: 12px; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 24px;
+    }
+
+    .skill-group h3 {
+      font-size: 10.5px;
+      font-weight: 700;
+      margin-bottom: 3px;
+      color: #333;
+    }
+
+    .skill-group p {
+      color: #444;
+      font-size: 10.5px;
+    }
+
+    .cert-list, .edu-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px 24px;
+    }
+
+    .cert-item, .edu-item {
+      font-size: 10.5px;
+      color: #333;
+    }
+
+    .in-progress { color: #555; font-style: italic; }
+
+    @media print {
+      body { padding: 0; }
+      @page { margin: 20mm 16mm; size: A4; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jordan Lee</h1>
+    <p class="tagline">DevOps &amp; Cloud Infrastructure Engineer</p>
+    <p class="contact">
+      Leeds, UK
+      <span>|</span>
+      <a href="mailto:jordan@lee-it.co.uk">jordan@lee-it.co.uk</a>
+      <span>|</span>
+      <a href="https://www.linkedin.com/in/jordan-lee-devops">linkedin.com/in/jordan-lee-devops</a>
+      <span>|</span>
+      <a href="https://lee-it.co.uk">lee-it.co.uk</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>Profile</h2>
+    <p>DevOps &amp; Cloud Infrastructure Engineer specialising in Azure infrastructure for large-scale SaaS platforms. I own the cloud infrastructure layer for a multi-product platform spanning 500+ repos and 10-20 product teams, building reusable Terraform and Bicep modules, shared CI/CD tooling, hosted build agent infrastructure, and an emerging AI platform layer.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="role">
+      <div class="role-header">
+        <span class="role-company">The Access Group</span>
+        <span class="role-dates">May 2021 – Present</span>
+      </div>
+      <div class="role-title">DevOps &amp; Cloud Infrastructure Engineer <span class="role-location">· Pontefract, UK</span></div>
+      <ul>
+        <li>Maintain a shared library of reusable Terraform and Bicep modules (15+ Azure services) published to Artifactory with semantic versioning, consumed by product pipelines across 500+ repos</li>
+        <li>Run a shared Azure Pipelines YAML template library standardising CI/CD across all product repos, with gated environment promotion (dev to staging to production) and PR-based approval gates</li>
+        <li>Manage hosted build agent infrastructure using VMSS-based auto-scaling pools and containerised agents</li>
+        <li>Maintain AI/ML platform infrastructure including LLM gateway configuration, serverless GPU model hosting, and agentic platform services on Azure</li>
+        <li>Use Claude Code subagent orchestration to roll out IaC changes across hundreds of repos in parallel, reducing week-long rollouts to hours</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-header">
+        <span class="role-company">Link Group (LNK)</span>
+        <span class="role-dates">October 2020 – May 2021</span>
+      </div>
+      <div class="role-title">Platform Engineer <span class="role-location">· Leeds, UK</span></div>
+      <ul>
+        <li>Wrote Terraform for fault-tolerant, region-resilient Azure solutions in an agile delivery environment</li>
+        <li>Sole owner of Windows Virtual Desktop infrastructure including image management and access control</li>
+        <li>Supported on-premises to Azure migrations across multiple EMEA domains</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-header">
+        <span class="role-company">Piksel</span>
+        <span class="role-dates">February 2018 – June 2019</span>
+      </div>
+      <div class="role-title">3rd Line Engineer <span class="role-location">· York, UK</span></div>
+      <ul>
+        <li>Supported multi-customer Wintel environments across Azure, AWS, hybrid cloud, and on-premises</li>
+        <li>Drove the team's shift to a DevOps workflow using Kanban and GitLab-based CI/CD pipelines</li>
+        <li>Built Azure Monitor customer monitoring and automated monthly patching via SCCM using PowerShell</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-header">
+        <span class="role-company">Computacenter</span>
+        <span class="role-dates">June 2012 – February 2018</span>
+      </div>
+      <div class="role-title">2nd Line Wintel Analyst / Service Desk Analyst <span class="role-location">· Hatfield, UK</span></div>
+      <ul>
+        <li>Supported a broad customer base across a shared service model covering critical incident management and datacentre migration exercises</li>
+        <li>Improved first-time fix rates by implementing automated ticket routing and ITSM call templates</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-header">
+        <span class="role-company">Fujitsu UK</span>
+        <span class="role-dates">July 2011 – June 2012</span>
+      </div>
+      <div class="role-title">1st Line Analyst <span class="role-location">· Stevenage, UK</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Cloud &amp; IaC</h3>
+        <p>Microsoft Azure, Terraform, Bicep, ARM Templates, Azure DevOps, GitLab CI/CD</p>
+      </div>
+      <div class="skill-group">
+        <h3>CI/CD &amp; Build Infrastructure</h3>
+        <p>Azure Pipelines (YAML), shared template libraries, VMSS build agents, containerised agents</p>
+      </div>
+      <div class="skill-group">
+        <h3>Scripting &amp; Automation</h3>
+        <p>PowerShell, Bash, Azure CLI</p>
+      </div>
+      <div class="skill-group">
+        <h3>AI-Assisted Engineering</h3>
+        <p>Claude Code, Devin, GitHub Copilot</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="cert-list">
+      <div class="cert-item">AZ-900: Microsoft Azure Fundamentals</div>
+      <div class="cert-item">MTA: Windows Server Administration Fundamentals</div>
+      <div class="cert-item">MCTS: Windows 7 Configuring</div>
+      <div class="cert-item">MTA: Security Fundamentals</div>
+      <div class="cert-item">Level 3 Diploma for ICT Systems and Principles</div>
+      <div class="cert-item">MTA: Networking Fundamentals</div>
+      <div class="cert-item in-progress">In progress: AZ-104 Azure Administrator</div>
+      <div class="cert-item in-progress">In progress: AZ-305 Solutions Architect Expert</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="edu-list">
+      <div class="edu-item"><strong>Zenos IT Academy</strong> — Information Technology (2010-2011)</div>
+      <div class="edu-item"><strong>Stanborough School</strong> — General Studies (2005-2010)</div>
+    </div>
+  </section>
+
+</body>
+</html>

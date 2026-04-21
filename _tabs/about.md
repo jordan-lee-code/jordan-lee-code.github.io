@@ -4,6 +4,8 @@ icon: fas fa-user-circle
 order: 1
 ---
 
+[Download CV (PDF)](/assets/Jordan-Lee-CV.pdf){: .btn .btn-primary }
+
 I'm a DevOps & Cloud Infrastructure Engineer based in Leeds, UK, specialising in Azure infrastructure for large-scale SaaS platforms. I build and maintain reusable Terraform, Bicep, and ARM-based infrastructure, shared CI/CD tooling, and an emerging AI platform layer — with a focus on automation, consistency, and enabling product teams to move at scale.
 
 Currently at **The Access Group**, where I've owned the cloud infrastructure layer since May 2021.

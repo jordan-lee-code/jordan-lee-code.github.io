@@ -1,0 +1,22 @@
+#!/bin/bash
+# Regenerates the CV PDF before every push.
+# Stages the updated PDF if it changed so it's included in the push.
+
+REPO_DIR="$(git rev-parse --show-toplevel)"
+SCRIPT="$REPO_DIR/scripts/generate-cv.sh"
+
+if [[ ! -f "$SCRIPT" ]]; then
+  exit 0
+fi
+
+echo "Regenerating CV..."
+"$SCRIPT"
+
+PDF="$REPO_DIR/assets/Jordan-Lee-CV.pdf"
+if ! git diff --quiet "$PDF" 2>/dev/null || git ls-files --others --exclude-standard "$PDF" | grep -q .; then
+  echo "CV changed, staging updated PDF..."
+  git add "$PDF"
+  git commit -m "Auto-update CV PDF" --no-edit -q
+fi
+
+exit 0
