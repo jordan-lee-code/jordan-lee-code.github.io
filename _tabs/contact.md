@@ -14,4 +14,6 @@ order: 8
 
 ## CV
 
+Current as of {{ site.time | date: "%B %Y" }}.
+
 [Download CV (PDF)](/assets/Jordan-Lee-CV.pdf)
