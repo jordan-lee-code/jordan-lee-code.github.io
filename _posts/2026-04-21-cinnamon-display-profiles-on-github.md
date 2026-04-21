@@ -29,13 +29,13 @@ The next gap was persistence across reboots. `xrandr` settings are runtime-only,
 
 The original scripts had Cinnamon and my specific monitor config baked in throughout. Anyone else using them would need to edit multiple files to change output names, resolution, or DE. That's not a great experience, so the repo went through a refactor before publishing.
 
-The core is now DE-agnostic. All Cinnamon-specific logic lives in `hooks/cinnamon/` - a `save-panels.sh` that takes a profile directory as an argument and snapshots dconf into it, and a `restart-de.sh` that calls `cinnamon --replace`. Adding support for another DE means adding a `hooks/<de>/` directory with the same two files. The DE is detected from `$XDG_CURRENT_DESKTOP`.
+The core is now DE-agnostic. All Cinnamon-specific logic lives in `hooks/cinnamon/`: a `save-panels.sh` that takes a profile directory as an argument and snapshots dconf into it, and a `restart-de.sh` that calls `cinnamon --replace`. Adding support for another DE means adding a `hooks/<de>/` directory with the same two files. The DE is detected from `$XDG_CURRENT_DESKTOP`.
 
 Profiles are no longer hardcoded. They're stored in `~/.config/display-profiles/<name>/` and contain three files: `xrandr.sh` (the generated xrandr command), an optional `panel-layout.sh` (written by the save hook), and a `meta` file with the name, description, and creation date. The shutdown and restart scripts list whatever profiles exist in that directory, so adding a new profile makes it appear in the menu automatically.
 
 ## What's in the repo
 
-```
+```text
 display-profiles/
 ├── lib/
 │   └── common.sh              # DE detection, profile listing, zenity/terminal selector
@@ -101,6 +101,6 @@ Shutdown and restart pick up any profiles in `~/.config/display-profiles/` autom
 
 ## Why share it
 
-Nvidia display bugs on Linux are a known long-running annoyance. The `xrandr` fix is well documented, but the autostart restore, dconf panel snapshots, and DE integration pieces are scattered. The profile wizard also addresses something that's genuinely fiddly to get right by hand - building a correct multi-monitor `xrandr` invocation with positions and refresh rates across multiple outputs.
+Nvidia display bugs on Linux are a known long-running annoyance. The `xrandr` fix is well documented, but the autostart restore, dconf panel snapshots, and DE integration pieces are scattered. The profile wizard also addresses something that's genuinely fiddly to get right by hand: building a correct multi-monitor `xrandr` invocation with positions and refresh rates across multiple outputs.
 
 My setup is Linux Mint with Cinnamon and two 1440p DisplayPort monitors, but the core works on any DE. If you're on GNOME or XFCE and want panel layout support, adding a hook directory is all it takes.
