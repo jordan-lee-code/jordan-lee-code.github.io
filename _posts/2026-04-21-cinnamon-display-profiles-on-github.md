@@ -82,7 +82,13 @@ And create profiles interactively:
 display-new-profile.sh
 ```
 
-The wizard asks for a profile name, walks through each connected output (enable/disable, resolution, refresh rate), sets the primary, configures relative positions for multi-monitor setups, and optionally creates a start menu shortcut and saves the current panel layout. The generated `xrandr.sh` is plain bash - easy to read and edit by hand if needed.
+The wizard asks for a profile name, walks through each connected output (enable/disable, resolution, refresh rate), then sets the primary and positions the remaining screens.
+
+Positioning works with absolute pixel coordinates rather than xrandr's relative flags, which is the only way to express layouts that aren't simple side-by-side arrangements. For each unplaced output the wizard builds a numbered list of options against every screen already placed: left, right, above, below, centered-above, centered-below. Once two or more screens are positioned, centered-above-all and centered-below-all are added, placing the new output centered over the full bounding box of the existing layout. After all outputs are placed, coordinates are normalised so the minimum x and y are both zero.
+
+Before saving, the wizard shows an ASCII block diagram of the layout and a pixel coordinate summary so you can confirm it looks right.
+
+The generated `xrandr.sh` uses `--pos` for absolute placement and is plain bash, easy to read and edit by hand if needed.
 
 From that point, switching is one command:
 
