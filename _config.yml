@@ -18,8 +18,8 @@ social:
 
 theme_mode: dark
 
-avatar: "/assets/img/avatar.png"
-image: "/assets/img/avatar.png"
+avatar: "/assets/img/avatar.webp"
+image: "/assets/img/avatar.webp"
 
 search: true
 
@@ -80,3 +80,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-archives
+  - jekyll-feed

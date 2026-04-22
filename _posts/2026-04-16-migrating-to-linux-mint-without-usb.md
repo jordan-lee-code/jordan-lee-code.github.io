@@ -2,6 +2,7 @@
 layout: post
 title: "Migrating to Linux Mint Without a USB Drive, and Why I'm Not Going Back"
 date: 2026-04-16
+description: "How I installed Linux Mint alongside Windows using disk partitioning, no USB drive needed, and why I haven't touched Windows since."
 categories: [Linux]
 tags:
   - linux

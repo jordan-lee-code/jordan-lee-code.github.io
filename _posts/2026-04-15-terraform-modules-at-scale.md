@@ -2,6 +2,7 @@
 layout: post
 title: "Managing Terraform Infrastructure Across 500+ Repos with a Shared Module Library"
 date: 2026-04-15
+description: "How we built a shared Terraform module library to manage infrastructure consistency across 500+ repos at The Access Group."
 categories: [DevOps]
 tags:
   - terraform

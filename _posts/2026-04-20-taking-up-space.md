@@ -2,6 +2,7 @@
 layout: post
 title: "Taking Up Space"
 date: 2026-04-20
+description: "On the quiet, accumulated cost of code-switching, being talked over, and having your confidence read differently depending on your gender in engineering workplaces."
 categories: [Career]
 tags:
   - career

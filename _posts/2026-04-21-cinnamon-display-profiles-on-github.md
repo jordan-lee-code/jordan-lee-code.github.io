@@ -2,6 +2,8 @@
 layout: post
 title: "display-profiles: Generic Display Switching with Named Profiles"
 date: 2026-04-21
+description: "display-profiles is now open source: a generic display-switching tool with named profiles, a setup wizard, and DE plugin support built out of a personal Nvidia driver workaround."
+categories: [Linux]
 tags:
   - linux
   - linux-mint

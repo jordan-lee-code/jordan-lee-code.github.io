@@ -2,6 +2,7 @@
 layout: post
 title: "Per-Mode Panel Layouts in Cinnamon Using dconf Snapshots"
 date: 2026-04-18
+description: "Snapshotting Cinnamon panel configurations with dconf and restoring them automatically when switching between single and dual monitor setups."
 categories: [Linux]
 tags:
   - linux
