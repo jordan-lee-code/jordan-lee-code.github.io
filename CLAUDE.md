@@ -27,7 +27,7 @@ The built site outputs to `_site/` (gitignored).
 - `_tabs/` — nav pages (About, Experience, Tech Stack, Now, Tags, Categories, Archives); each file needs `icon`, `order`, and `title` front matter
 - `_posts/` — blog posts named `YYYY-MM-DD-slug.md` with `layout: post` front matter
 - `index.html` — home page using `layout: home` (must be `.html` for Chirpy's paginator)
-- `assets/img/` — images including `avatar.png`
+- `assets/img/` — images including `avatar.webp`
 
 ## Adding content
 
@@ -37,6 +37,8 @@ The built site outputs to `_site/` (gitignored).
 layout: post
 title: "Post Title"
 date: YYYY-MM-DD
+description: "One or two sentences summarising the post (150-160 chars). No em dashes."
+categories: [Category]
 tags:
   - tag-one
   - tag-two

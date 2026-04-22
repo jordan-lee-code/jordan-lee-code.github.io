@@ -2,6 +2,7 @@
 layout: post
 title: "Splitting Work and Personal Computing with Barrier KVM, and Scripting Around an Nvidia Display Bug"
 date: 2026-04-17
+description: "Using Barrier KVM to share one keyboard and mouse across my personal PC and work laptop, and scripting around an Nvidia display bug that kept resetting monitor settings."
 categories: [Linux]
 tags:
   - linux
@@ -51,4 +52,4 @@ xrandr \
     --output DP-2 --mode 2560x1440 --rate 165.08 --right-of DP-0
 ```
 
-From there the solution grew to cover panel layouts, shutdown and restart prompts, autostart on login, and an interactive profile wizard. The full thing is published as [display-profiles](https://github.com/jordan-lee-code/display-profiles) - a generic tool for managing named display profiles on any Linux DE.
+From there the solution grew to cover panel layouts, shutdown and restart prompts, autostart on login, and an interactive profile wizard. The full thing is published as [display-profiles](https://github.com/jordan-lee-code/display-profiles), a generic tool for managing named display profiles on any Linux DE.

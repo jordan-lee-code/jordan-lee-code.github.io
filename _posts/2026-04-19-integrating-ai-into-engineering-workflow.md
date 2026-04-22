@@ -2,6 +2,7 @@
 layout: post
 title: "AI in the Engineering Workflow: Augmentation vs Replacement"
 date: 2026-04-19
+description: "On using Claude Code, Devin, and Copilot in a real engineering workflow: where they help, where they don't, and what the augmentation-vs-replacement framing gets wrong."
 categories: [DevOps, AI]
 tags:
   - ai
@@ -51,7 +52,7 @@ AI tooling is only useful if you invest in feeding it the right context. That me
 
 There's also a calibration problem that catches most people. The temptation is to trust the output too much early on, then swing hard the other way after the first genuinely bad result and barely use the thing at all. I've done both. The relationship that actually works sits somewhere in the middle: a capable but context-limited collaborator whose work you always review, not an oracle and not a toy.
 
-The rate limit complaints the video mentions are real. The rolling 5-hour window, the weekly cap, the peak and off-peak tiers — genuinely complicated to navigate. But the telling thing is that almost nobody frustrated with the limits is suggesting switching tools. The conversation is about upgrading plans, not leaving, and that's a more honest signal of how much people value it once they've cleared the learning curve than any benchmark score.
+The rate limit complaints the video mentions are real. The rolling 5-hour window, the weekly cap, the peak and off-peak tiers: genuinely complicated to navigate. But the telling thing is that almost nobody frustrated with the limits is suggesting switching tools. The conversation is about upgrading plans, not leaving, and that's a more honest signal of how much people value it once they've cleared the learning curve than any benchmark score.
 
 ## Not all AI generation is the same
 
