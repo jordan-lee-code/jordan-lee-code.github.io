@@ -29,7 +29,21 @@ The compression pipeline is `UTF-8 bytes → gzip → base64url`. Gzip is effect
 The first version of the payload format used abbreviated JSON map keys per item:
 
 ```json
-{"v": 1, "items": [{"n": "Oats", "br": null, "u": "g", "a": 100, "ec": 389, "cb": 66, "ft": 7, "pr": 17}]}
+{
+  "v": 1,
+  "items": [
+    {
+      "n": "Oats",
+      "br": null,
+      "u": "g",
+      "a": 100,
+      "ec": 389,
+      "cb": 66,
+      "ft": 7,
+      "pr": 17
+    }
+  ]
+}
 ```
 
 Even with single-character keys, the overhead adds up. Every item pays for its key strings. With 13 fields per item and multiple items per meal, the total key overhead is non-trivial before compression.
