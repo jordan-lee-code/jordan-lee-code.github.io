@@ -89,3 +89,15 @@ sudo udevadm control --reload-rules && sudo udevadm trigger --subsystem-match=hi
 On first load, both applets may show `--` until the device has connected to its dongle. Give it a few seconds after turning the peripheral on, then click the applet to refresh.
 
 Both repositories are on GitHub: [jordan-lee-code/logitech-headset-battery](https://github.com/jordan-lee-code/logitech-headset-battery) and [jordan-lee-code/yunzii-applet](https://github.com/jordan-lee-code/yunzii-applet).
+
+## What's Next: A Unified Framework
+
+Writing these two applets back to back made the shared structure impossible to ignore. The output protocol, the caching format, the wired charging detection, the applet's colour coding and notification logic: none of it changes between a headset and a keyboard. What changes is one function: how you ask the dongle for the battery level.
+
+That's a satisfying thing to notice, and it points somewhere. My plan is a small shared framework where the device-specific reader is just a plugin: a Python module that knows the vendor IDs, knows how to find the right hidraw interface, and knows how to get a percentage out of it. Everything else lives once in a shared core and doesn't need to be copied into every new project.
+
+A single configurable Cinnamon applet could then support any compatible peripheral just by pointing at the right device module. Adding a third peripheral would mean writing one small Python file and a udev rule, rather than forking an entire repository and renaming everything.
+
+The two projects together make the shape of the framework clear in a way that one alone couldn't have. The Logitech work showed that passive log reading and active querying can both feed the same downstream protocol without the applet caring which approach the hardware uses. The Yunzii work confirmed the wired-device charging pattern was solid enough to standardise rather than treat as a one-off. Neither of those things was obvious before building both.
+
+I'll write about it when it exists.
