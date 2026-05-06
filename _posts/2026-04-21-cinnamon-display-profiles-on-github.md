@@ -21,9 +21,9 @@ The repo is on GitHub: [jordan-lee-code/display-profiles](https://github.com/jor
 
 ## What grew out of those posts
 
-The original scripts handled the core problem: apply the right `xrandr` config, set the correct primary screen, lock in 165Hz. That covered the display bug.
+The original scripts handled the core problem of getting the displays to behave themselves, by applying the right `xrandr` configuration, setting the correct primary screen, and locking in the refresh rate at 165Hz. That covered the display bug, but it left a few other quiet annoyances unaddressed.
 
-Then I wanted the panel layout to switch alongside the monitors. Working on one screen means a single panel in the centre. Working on two means panels spread across both. Cinnamon stores all of this in dconf, so `display-save-layout.sh` snapshots the current panel config to a shell script of `dconf write` calls, restored automatically on each profile switch.
+The next thing I wanted, once the displays themselves were holding their settings, was for the panel layout to switch alongside the monitor configuration rather than lagging behind it. Working on one screen wants a single panel sitting in the middle of it, while working on two wants panels spread across both monitors in a configuration that makes sense for that arrangement. Cinnamon stores all of this in dconf, which meant `display-save-layout.sh` could snapshot the current panel config to a small shell script of `dconf write` calls, then have that script run automatically on each profile switch from then on.
 
 The next gap was persistence across reboots. `xrandr` settings are runtime-only, so switching to work mode, shutting down, and coming back the next day would put everything back to the Nvidia driver's best guess. The fix was a Zenity dialog at shutdown and restart asking which profile to use next, saving the answer to `~/.config/display-mode`, and an autostart entry that reads it and calls the right script on every login.
 
@@ -104,4 +104,6 @@ Nvidia display bugs on Linux are a known long-running annoyance. The `xrandr` fi
 
 My setup is Linux Mint with Cinnamon and two 1440p DisplayPort monitors, but the core works on any DE. If you're on GNOME or XFCE and want panel layout support, adding a hook directory is all it takes.
 
-This is also the first thing I've published as open source. It started as a personal workaround for an annoying driver bug and turned into something I'd actually want to hand to someone else. Feels like a reasonable first release.
+This is also the first thing I have published as open source, and I want to say that out loud rather than skip past it. It started as a personal workaround for an annoying driver bug at my own desk, and over the course of a few quiet evenings it turned into something I would actually want to hand to somebody else. The threshold for publishing felt higher than it should have, in the way it almost always does the first time, and pushing the repo public was a small private moment of letting myself take up a little more space in the world than I usually do.
+
+I am still slightly surprised, looking at the GitHub page, that this is a thing I made. If you hit the same Nvidia bug some evening and the scripts here spare you the afternoon I lost to figuring it out the first time, that is enough reason for the repository to exist, and I would love to know it helped.

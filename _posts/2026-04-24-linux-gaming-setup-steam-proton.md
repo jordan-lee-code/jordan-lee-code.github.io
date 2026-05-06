@@ -79,4 +79,6 @@ Without this, Steam can navigate to the path in the file dialog but fails to cre
 
 **Shader compilation stutter:** The first play session through a new game involves hitching as the shader cache builds. It's gone on subsequent sessions, but it can feel like something's broken when you first hit it. It isn't.
 
-**Per-game Proton overrides:** One game I tried crashed at launch on official Proton. Switching to Proton-GE in that game's Properties fixed it immediately. When something isn't working, checking whether the GE build handles it is always worth a try before going further.
+**Per-game Proton overrides:** One game I tried crashed at launch on official Proton, and switching to Proton-GE in that game's Properties fixed it immediately, with a small relief I felt physically when the title screen finally loaded. When something isn't working, checking whether the GE build handles it is almost always worth a try before going any further down the rabbit hole.
+
+If you are working through this list on your own evening, with a controller in your lap and a game you have been waiting to play, I hope it goes more smoothly for you than it did for me the first time around. Most of the friction I hit, I hit so that you would not have to.

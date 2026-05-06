@@ -44,6 +44,8 @@ Startup time is marginally slower because the sandbox has to be set up on launch
 
 ## Where I've landed
 
-Flatpak for applications: anything that has a GUI, lives in the dock, and gets launched by a person. apt for everything else. In practice the categories don't overlap, so the two don't conflict.
+Flatpak ends up being the right answer for applications, by which I mean anything that has a GUI, lives in the dock, and gets launched by a person rather than by another program. apt is the right answer for everything else, for the system tooling and the development utilities and the libraries other things depend on. In practice the two categories do not overlap very much in what they want, so the two package managers do not really conflict with each other day to day, and I have come to appreciate the calm of letting each tool do the work it is best at.
 
-Insisting on pure Flatpak for everything means fighting the sandbox constantly. Refusing Flatpak entirely means running noticeably old software for some apps. The mixed approach isn't a failure to commit. It's the obvious answer once you've spent enough time with both.
+Insisting on pure Flatpak for everything means fighting the sandbox constantly, in places where the sandbox was never really designed to be useful. Refusing Flatpak entirely means running noticeably old versions of software you actually rely on, for no real reason other than purity. The mixed approach is not a failure to commit to either side of the debate; it is, when you sit with it long enough, the obvious answer that emerges once you have spent enough time with both, and I have stopped feeling self-conscious about defaulting to it.
+
+If you are working out your own packaging philosophy on a quiet evening with a fresh Linux install, my gentle suggestion is not to feel obliged to pick a side. The mixed answer is not a compromise. It is, in my experience, the thing that lets the desktop quietly disappear into the work you actually came to do.

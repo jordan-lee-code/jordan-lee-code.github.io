@@ -12,9 +12,9 @@ tags:
   - hid
 ---
 
-I have two wireless peripherals on my desk that work fine on Linux: a Logitech A20 X headset and a Yunzii B87 keyboard. Audio, the mute button, typing, all of it functions without any proprietary software. The one thing neither of them does is tell me the battery level. The dongle for each device doesn't surface it through PulseAudio, ALSA, or anywhere else the desktop can see it. You find out the charge is low when it cuts out.
+I have two wireless peripherals on my desk that work fine on Linux: a Logitech A20 X headset and a Yunzii B87 keyboard. Audio, the mute button, typing, all of it functions without any proprietary software, which I am quietly grateful for whenever I think about how much friction it could otherwise be adding to my day. The one thing neither of them does is tell me the battery level. The dongle for each device does not surface it through PulseAudio, ALSA, or anywhere else the desktop can see, which means you find out the charge is low only when the device suddenly cuts out, often in the middle of something you cared about.
 
-I wanted a small indicator in the Cinnamon panel for each. Neither project had any Linux support to reference, so I started poking at the hardware.
+I wanted a small indicator in the Cinnamon panel for each, the kind of unobtrusive number that quietly reassures you that the device underneath it is still alive. Neither project had any Linux support to reference, so I sat down at my desk with a fresh terminal and started poking at the hardware to see what the dongles would tell me directly.
 
 ## The Logitech A20 X: Reading a Firmware Debug Log
 
@@ -92,12 +92,12 @@ Both repositories are on GitHub: [jordan-lee-code/logitech-headset-battery](http
 
 ## What's Next: A Unified Framework
 
-Writing these two applets back to back made the shared structure impossible to ignore. The output protocol, the caching format, the wired charging detection, the applet's colour coding and notification logic: none of it changes between a headset and a keyboard. What changes is one function: how you ask the dongle for the battery level.
+Writing these two applets back to back made the shared structure between them impossible to ignore once I sat down to compare them honestly. The output protocol, the caching format, the wired charging detection logic, the applet's colour coding rules, the notification logic underneath the labels: none of those pieces actually change between a headset and a keyboard, even though the two devices are otherwise quite different. The only piece that genuinely changes is one small function buried inside each project, the function that knows how to ask this particular dongle for the battery level.
 
-That's a satisfying thing to notice, and it points somewhere. My plan is a small shared framework where the device-specific reader is just a plugin: a Python module that knows the vendor IDs, knows how to find the right hidraw interface, and knows how to get a percentage out of it. Everything else lives once in a shared core and doesn't need to be copied into every new project.
+That is the kind of structural realisation I find quietly satisfying, and it points pretty clearly toward what wants to come next. My plan is a small shared framework in which the device-specific reader is just a plugin, a Python module that knows the vendor IDs of its hardware, knows how to find the right hidraw interface among the ones the kernel exposes, and knows how to extract a percentage from whatever response the device sends back. Everything else lives once in a shared core, where it can be improved on its own and where it does not need to be copied into every new device project I might write in the future.
 
-A single configurable Cinnamon applet could then support any compatible peripheral just by pointing at the right device module. Adding a third peripheral would mean writing one small Python file and a udev rule, rather than forking an entire repository and renaming everything.
+A single configurable Cinnamon applet could then support any compatible peripheral simply by pointing at the right device module at install time. Adding a third peripheral, the next time some piece of hardware on my desk fails to surface its battery, would mean writing one small Python file along with a udev rule for the new device, rather than forking an entire repository and renaming all the files inside it.
 
-The two projects together make the shape of the framework clear in a way that one alone couldn't have. The Logitech work showed that passive log reading and active querying can both feed the same downstream protocol without the applet caring which approach the hardware uses. The Yunzii work confirmed the wired-device charging pattern was solid enough to standardise rather than treat as a one-off. Neither of those things was obvious before building both.
+The two projects together make the shape of the framework clear in a way that one project alone could not have done. The Logitech work showed that passive log reading and active querying can both feed the same downstream protocol without the applet ever needing to care which approach the underlying hardware happens to use. The Yunzii work confirmed that the wired-device charging pattern is solid enough to standardise across devices rather than treat as a one-off coincidence. Neither of those observations was obvious to me before I had built both projects and been able to compare them side by side.
 
-I'll write about it when it exists.
+I will write about the framework when it exists, and when there is something concrete to point at rather than just an intention. Until then, having the two applets working in their current form is genuinely enough, and I am happy with where the work has landed for now.

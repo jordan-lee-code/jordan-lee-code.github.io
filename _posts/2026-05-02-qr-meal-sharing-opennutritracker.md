@@ -82,4 +82,6 @@ It is the right policy. Hardcoded English strings in a multilingual app are a de
 
 ---
 
-The QR size ceiling turned out to be the most generative constraint in the feature. The compression pipeline, the shift from maps to arrays, the version field, the paste fallback: none of those decisions exist without the ceiling pushing back. You think you're adding a share button and you end up thinking about payload encoding, schema versioning, and graceful degradation. That tends to be where the interesting work is.
+The QR size ceiling turned out to be the most generative constraint in the whole feature, and I keep coming back to that fact whenever I sit with the code. The compression pipeline, the shift from maps to arrays, the version field, the paste fallback: none of those decisions exist if the ceiling does not push back on every other choice you make. You think you are adding a share button to a meal logger, and you end up sitting in the kitchen on a Tuesday evening thinking about payload encoding, schema versioning, and graceful degradation. That tends, I have come to think, to be where the interesting work actually is.
+
+I am still quietly happy that this small feature exists now and that my partner can scan a QR code from their phone over a cup of tea and have the meal I cooked them already logged. If you have ever wanted to share a meal with somebody you love and found yourself rebuilding the same data by hand on two devices, I hope this version of the feature reaches you somewhere too.
