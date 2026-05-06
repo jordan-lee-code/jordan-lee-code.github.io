@@ -145,6 +145,8 @@ Any hand-rolled `azurerm_private_dns_a_record` resources writing into a central 
 
 ## Why it's worth the setup cost
 
-The pattern makes DNS registration self-documenting. Instead of tracking down which private endpoint maps to which DNS record and why it was registered a particular way, the information lives in the module output as structured data. Any module that owns a private endpoint declares exactly what DNS records it needs. The pipeline handles registration the same way regardless of which service or which repo it came from.
+The pattern makes DNS registration self-documenting in a way I have come to genuinely love. Instead of having to track down which private endpoint maps to which DNS record and why it was registered a particular way, the information lives directly in the module output as structured data, and any module that owns a private endpoint declares exactly which DNS records it needs alongside it. The pipeline then handles the actual registration the same way every time, regardless of which service or which repo the request came from.
 
-The `.scm` record for App Service and the three-zone requirement for AI Services are the ones that catch almost everyone the first time. Getting them right once, in the module output, is considerably cheaper than diagnosing missing records per deployment.
+The `.scm` record for App Service and the three-zone requirement for AI Services are the ones that catch almost everyone the first time they touch this stuff. Getting them right once, inside the module output, is considerably cheaper than diagnosing missing records on a per-deployment basis whenever a service goes unreachable.
+
+I am still thinking about how much of platform engineering, when you strip away the patterns and the tooling, comes down to caring about the colleague on the other end of a problem you could have prevented. The colleague who would otherwise be debugging an unhelpful 502 at half past ten on a Friday evening, while she would much rather be doing anything else, is the person this pattern is really for, and she is the person I most want to remember when I write the next one.

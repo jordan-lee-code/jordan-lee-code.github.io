@@ -53,10 +53,10 @@ That's nearly the whole CI workflow. Small projects don't need complex CI, and a
 
 ## The resistance to publishing
 
-There was a stretch before I published where I kept finding reasons not to. It's too specific to my hardware. The README isn't ready. The DE plugin interface isn't clean enough. The coordinate normalisation has an edge case I haven't fully tested.
+There was a long stretch before I published where I kept finding new reasons not to. It is too specific to my hardware. The README is not ready yet. The DE plugin interface is not clean enough to hand to anyone else. The coordinate normalisation has an edge case I have not fully tested. The list went on, and I sat with it for longer than I want to admit.
 
-Some of those were real. Most were the kind of pre-emptive self-editing that keeps useful things private indefinitely. The Nvidia display bug on Linux is a known and persistent frustration. The `xrandr` fix is documented but the persistence and panel layout pieces are scattered across forum posts and partial solutions. Having them in one place with a setup wizard is useful even if the tool isn't perfect.
+Some of those reasons were real and worth caring about. Most of them were the kind of pre-emptive self-editing that quietly keeps useful things private indefinitely, and I want to name that pattern out loud, because I think a lot of us recognise it when we see it in ourselves. The Nvidia display bug on Linux is a known and persistent frustration that has cost real evenings to people I will never meet. The `xrandr` fix is well documented in pieces, but the persistence and panel layout work is scattered across forum posts and partial solutions, and having it all in one place with a setup wizard is useful even if the tool itself is not perfect.
 
-Publishing it was the right call. The README is good enough. The code is the right shape for what it does. That's sufficient.
+Publishing it, in the end, was the right call, and I am genuinely glad I did it. The README is good enough. The code is the right shape for what it does. That is sufficient, and I am learning, slowly, to let sufficient be sufficient.
 
-There's a version of quality control that's actually quality control, and there's a version that's indefinite deferral dressed up as standards. Knowing which one you're doing is most of the work.
+There is a version of quality control that is actually quality control, and there is a version of it that is indefinite deferral dressed up as standards. Knowing which one you are doing on any given evening is most of the work, and being kind to yourself about the answer is the rest of it.

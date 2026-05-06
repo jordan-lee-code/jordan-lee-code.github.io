@@ -13,9 +13,9 @@ tags:
   - productivity
 ---
 
-Once the [display mode switching](/linux/2026/04/17/barrier-kvm-nvidia-display-workaround) was working reliably, the next thing that started to bother me was the panel layout. Going from two screens to one and back meant the Cinnamon panel arrangement was left stranded in whatever state it happened to be: a single centred panel when two screens were up, or a sprawling two-panel setup squashed onto one monitor.
+Once the [display mode switching](/linux/2026/04/17/barrier-kvm-nvidia-display-workaround) was working reliably, the next small thing that started to bother me was the panel layout. Going from two screens down to one and back again meant the Cinnamon panel arrangement got left stranded in whatever state it happened to be in when the displays changed underneath it, with a single centred panel when two screens were up, or a sprawling two-panel setup squashed awkwardly onto one monitor. The wrong layout never broke anything; it just made the desk feel slightly off in a way that, after enough switches, started to wear on me.
 
-Fortunately, Cinnamon stores all panel configuration in dconf, which makes the solution pleasingly clean: snapshot each layout once, restore the right one when switching modes.
+Fortunately, Cinnamon stores all of its panel configuration in dconf, which makes the solution pleasingly clean: snapshot each layout once, restore the right one whenever the mode switches.
 
 ## How Cinnamon stores panel config
 
@@ -59,4 +59,4 @@ dconf write /org/cinnamon/enabled-applets "['panel1:left:0:Cinnamenu@json:17', \
 
 Combined with the xrandr switching from the previous post, switching modes carries monitors, refresh rate, and panel layout in one step.
 
-This panel snapshotting is now part of [display-profiles](https://github.com/jordan-lee-code/display-profiles), where it lives as a Cinnamon-specific hook. Other DEs can be supported by adding a `hooks/<de>/` directory with equivalent save and restart scripts.
+This panel snapshotting is now part of [display-profiles](https://github.com/jordan-lee-code/display-profiles), where it lives as a Cinnamon-specific hook. Other desktop environments can be supported by adding a `hooks/<de>/` directory with equivalent save and restart scripts, and I love when a small piece of code can be useful to people running setups quite different from mine. If you are on a different DE and you would like to add support for it, the door is genuinely open.

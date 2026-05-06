@@ -55,6 +55,8 @@ Still frustrating, still the biggest friction point. Intensive work sessions tha
 
 ## Where it sits now
 
-The thing that changed my workflow most isn't the code generation, which is useful and occasionally excellent. It's the planning overhead. I write better notes before starting. I structure problems more carefully. I catch more "I haven't actually thought this through" moments before they turn into half-done branches or wrong turns.
+The thing that changed my workflow most is not the code generation itself, which is useful and occasionally excellent, but the planning overhead it has gently imposed on me. I write better notes before starting. I structure problems more carefully than I did six weeks ago. I catch more of those "I have not actually thought this through" moments before they turn into half-done branches or wrong turns at the end of a long day.
 
-That's a quieter benefit than "it writes code for me." It's also the one that's compounded the most.
+That is a quieter benefit than "it writes code for me", and it is also the one that has compounded the most for me over the six weeks of using the tool seriously. The version of me that the rest of my team interacts with, the one whose changes arrive with clearer rationale and fewer surprises in review, has been a kinder colleague to work with than the version that used to land half-thought-through patches and work it out in the comments afterwards. That is a small thing on the page, and I want to record it as something more than that, because it matters more than I expected it to when I started.
+
+I am still working out, week by week, what my own relationship with these tools is going to settle into, and I do not have a final answer yet. If you are also six weeks or six months into your own version of this experiment, sitting at your own desk wondering whether the time has been worth it, I would gently say: the answer is rarely in the code that came back to you. It is more often in the way you found yourself thinking about the work before the tool answered.

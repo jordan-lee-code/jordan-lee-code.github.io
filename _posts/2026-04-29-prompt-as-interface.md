@@ -11,9 +11,9 @@ tags:
   - tooling
 ---
 
-The thing that took me a while to internalise about prompt quality is that it's not a communication problem, it's a specification problem. Vague input produces vague output not because the tool didn't understand you, but because you haven't fully specified what you want. Writing a better prompt and figuring out what you actually need turn out to be the same activity.
+The thing that took me a while to internalise about prompt quality, sitting at my desk on too many quiet evenings rereading my own queries, is that it is not really a communication problem at all. It is a specification problem. Vague input produces vague output not because the tool failed to understand you, but because you have not fully specified what you actually want from it. Writing a better prompt and figuring out what you actually need turn out to be the same activity, and that is one of the small quiet gifts of working with these tools that I did not expect.
 
-This isn't a list of prompt engineering tips. It's more about the mental model shift that changed how useful AI tools are for me in engineering work.
+This is not a list of prompt engineering tips. It is more about the mental model shift that changed how useful AI tools are for me in engineering work, and how that shift has rippled, slowly and unobviously, into the rest of how I work.
 
 ## From search query to spec
 
@@ -49,4 +49,6 @@ The skills transfer directly. Engineers who write good tickets tend to get more 
 
 The benefit isn't magical output quality. It's fewer responses that miss the point, less back-and-forth, and a shorter path from intent to something useful. More of the value comes out of the first generation rather than through a sequence of corrections.
 
-The deeper change, the one that compounded for me over time, is that the discipline of writing precise prompts has made me more precise about what I'm actually trying to do before I start. Prompting well turns out to require thinking well first, which is a less glamorous description of the skill but probably a more accurate one.
+The deeper change, the one that has compounded for me over time, is that the discipline of writing precise prompts has slowly made me more precise about what I am actually trying to do before I start. Prompting well turns out to require thinking well first, which is a less glamorous description of the skill but probably a more accurate one. The same discipline shows up in the tickets I write for my colleagues, in the design documents I share before a piece of work begins, and in the questions I ask before I take a piece of work on. It turns out the thing the model needed was the same thing the people around me have always needed from me: clarity about what I am asking for, and clarity about what I am not.
+
+I am still slightly surprised, looking back at my own messages from a year ago, by how much that one habit has changed the shape of how I work with the people I love working with. It has made me, I think, a kinder colleague in ways that have very little to do with AI itself, and I am genuinely grateful for that, even if the route to it was unexpected.

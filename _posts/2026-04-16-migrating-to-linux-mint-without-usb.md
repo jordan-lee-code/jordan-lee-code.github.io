@@ -69,9 +69,9 @@ The performance story is genuinely better than I expected. For many titles, fram
 
 ## Was it worth it?
 
-Unreservedly. The system feels lighter and more responsive, boot times are genuinely shorter, and there's none of that low-grade background noise from an OS trying to upsell me on OneDrive or interrupt me at the worst possible moment. For the titles I care about most, the gaming experience is equivalent to Windows, and in some cases noticeably better.
+Unreservedly, and I mean that with the small quiet certainty I have grown into about it over the past month. The system feels lighter and more responsive than Windows ever did. Boot times are genuinely shorter. There is none of that low-grade background noise from an OS trying to upsell me on OneDrive or interrupt me at the worst possible moment of an evening. For the titles I care about most, the gaming experience is equivalent to Windows, and in some cases is noticeably better than it was.
 
-The no-USB route added a few steps that a standard install wouldn't need, but it was a satisfying exercise and meant the whole migration happened without any downtime or dependency on hardware I didn't have. If you've been hesitating about Linux for gaming, Proton's current state makes it a far more realistic choice than it was even two years ago, and the barrier keeps dropping.
+The no-USB route added a few steps that a standard install would not have needed, but it was a satisfying exercise in its own right and meant the whole migration happened without any downtime or any dependency on hardware I did not have. If you have been hesitating about Linux for gaming the way I had been hesitating, and the only thing standing between you and trying it is the perfectly reasonable fear that something important will not work, I want to gently say: Proton's current state makes the leap a far more realistic choice than it was even two years ago, and the barrier keeps dropping. I am still glad I made the switch, and I am still slightly surprised by how easy it was to live in the new system once I got there.
 
 ---
 
