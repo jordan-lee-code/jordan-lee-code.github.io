@@ -3,7 +3,7 @@ timezone: Europe/London
 
 title: Jordan Lee
 tagline: DevOps & Cloud Infrastructure Engineer
-description: DevOps & Cloud Infrastructure Engineer — portfolio and blog
+description: DevOps & Cloud Infrastructure Engineer
 url: "https://lee-it.co.uk"
 baseurl: ""
 
@@ -37,7 +37,6 @@ kramdown:
     block:
       line_numbers: true
 
-paginate: 10
 
 collections:
   tabs:
@@ -65,19 +64,8 @@ defaults:
     values:
       layout: page
 
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
-
 plugins:
   - jekyll-seo-tag
   - jekyll-include-cache
   - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-archives
   - jekyll-feed

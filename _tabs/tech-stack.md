@@ -1,7 +1,7 @@
 ---
 title: Tech Stack
 icon: fas fa-layer-group
-order: 3
+order: 2
 ---
 
 A breakdown of the tools and technologies I work with regularly.
@@ -10,7 +10,7 @@ A breakdown of the tools and technologies I work with regularly.
 
 | Tool | Usage |
 |------|-------|
-| **Microsoft Azure** | Primary cloud platform — Compute, Networking, Storage, Monitoring |
+| **Microsoft Azure** | Primary cloud platform - Compute, Networking, Storage, Monitoring |
 | **Azure DevOps** | Pipelines, Repos, Boards |
 | **Azure API Management** | API gateway and developer portal management |
 | **Azure Container Apps** | Serverless container hosting for microservices |
@@ -20,7 +20,7 @@ A breakdown of the tools and technologies I work with regularly.
 
 | Tool | Usage |
 |------|-------|
-| **Terraform** | Primary IaC language — shared module library spanning 15+ Azure services |
+| **Terraform** | Primary IaC language - shared module library spanning 15+ Azure services |
 | **Bicep** | Azure-native IaC, used alongside Terraform for ARM-level deployments |
 | **ARM Templates** | Subscription bootstrap and policy assignments |
 
@@ -44,7 +44,7 @@ A breakdown of the tools and technologies I work with regularly.
 
 | Tool | Usage |
 |------|-------|
-| **Claude Code** | Agentic IaC orchestration — parallel subagents across 500+ repos |
+| **Claude Code** | Agentic IaC orchestration - parallel subagents across 500+ repos |
 | **Devin** | Autonomous infrastructure scaffolding and onboarding |
 | **GitHub Copilot** | Inline code acceleration for Terraform, Bicep, and YAML |
 | **LiteLLM** | LLM gateway infrastructure and model routing |
